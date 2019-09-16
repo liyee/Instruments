@@ -1,0 +1,88 @@
+<header>
+	<ul>
+		<dl class="logo"><a href="/"><img src="{dede:global.cfg_cmspath/}/static/images/logo.jpg" /></a></dl>
+		<div class="version fl">
+		<a href="{dede:global.cfg_cmspath/}/cn/" rel="nofollow">中文版</a> | <a href="{dede:global.cfg_cmspath/}/en/" rel="nofollow">ENGLISH</a>	
+		</div>
+		<div class="search">
+			<form target="hid" onsubmit="site.get_list(1,$(&quot;#SearchValue&quot;).val())">
+				<input type="text" id="SearchValue" class="ser-text" placeholder="Search">
+				<button type="button" class="ser-sub" onclick="site.get_list(1,$(&quot;#SearchValue&quot;).val())"></button>
+			</form> 
+		</div>
+
+	</ul>
+</header>
+ 
+
+<div class="menu cl">
+
+	<ul id="nav" class="nav clearfix">
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='71'}[field:typelink /]{/dede:type}">About Us</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='71' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='80'}[field:typelink /]{/dede:type}">Products</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='80' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='119'}[field:typelink /]{/dede:type}">Projects</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='119' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>	
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='126'}[field:typelink /]{/dede:type}">Support</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='126' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='130'}[field:typelink /]{/dede:type}">News and Events</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='130' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='136'}[field:typelink /]{/dede:type}">Recruitment</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='136' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='133'}[field:typelink /]{/dede:type}">Contact us</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='133' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>			 	
+		
+	</ul>
+
+	<script>
+	jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	</script>
+	
+
+	
+</div>

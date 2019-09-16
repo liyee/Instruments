@@ -1,0 +1,13 @@
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+.well-known
+deployment.properties
+uploads/*
+ccc/*
+li.ccc.com.zip
+en/*
+cn/*
+data/tplcache/*
+data/cache/*

@@ -1,0 +1,4 @@
+INSERT INTO `dede_plus_mda_setting` VALUES('','','');
+INSERT INTO `dede_plus_mda_setting` VALUES('','','');
+INSERT INTO `dede_plus_mda_setting` VALUES('','','');
+INSERT INTO `dede_plus_mda_setting` VALUES('','','');

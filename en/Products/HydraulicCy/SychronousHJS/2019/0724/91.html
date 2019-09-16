@@ -1,0 +1,867 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> 
+<link rel="shortcut icon" href="favicon.ico" /> 
+<title>Synchronous PLC Hydraulic Lifting System_上海泰杉机械有限公司</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Synchronous PLC Hydraulic Lifting System Model number Lift points Integrated pump Accuracy (mm) Touch screen control Leveling Weighing CG Expandable TII-SLCG 4, 8 yes 0.5,1 yes yes yes* no no TII-ESS 4, 8, 12,24,32,64 yes 0.5,1 yes yes yes yes Yes Feature" />
+<script src="https://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script> 
+<script src="/static/js/jquery.SuperSlide.2.1.3.js"></script>
+<!-- <link rel='stylesheet' type='text/css' href='/static/css/style.css'/>  -->
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<script>
+function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        // document.writeln("您的浏览设备为：");  
+        if(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            // alert("手机浏览！");  
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">');
+			document.write('<link rel="stylesheet" href="/static/wap/css/swiper.css" />');
+			document.write('<link rel="stylesheet" href="/static/wap/css/index.css" />');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/jquery.js"><\/script>');
+			
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/change-html-fz.js"><\/script>');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/simpler-sidebar.min.js"><\/script>');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/swiper.js"><\/script>');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/SuperSlide.js"><\/script>');
+			
+        } else {
+
+            // alert("PC浏览！");  
+			document.write('<meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">');
+            document.write('<link rel="stylesheet" href="/static/css/style.css" />'); 
+		}
+    }
+    browserRedirect();
+
+</script>
+
+<body>
+
+<div class="visible-lg">
+
+<header>
+	<ul>
+		<dl class="logo"><a href="/"><img src="/static/images/logo.jpg" /></a></dl>
+		<div class="version fl">
+		<a href="/cn/" rel="nofollow">中文版</a> | <a href="/en/" rel="nofollow">ENGLISH</a>	
+		</div>
+		<div class="search">
+			<form target="hid" onsubmit="site.get_list(1,$(&quot;#SearchValue&quot;).val())">
+				<input type="text" id="SearchValue" class="ser-text" placeholder="Search">
+				<button type="button" class="ser-sub" onclick="site.get_list(1,$(&quot;#SearchValue&quot;).val())"></button>
+			</form> 
+		</div>
+
+	</ul>
+</header>
+ 
+
+<div class="menu cl">
+
+	<ul id="nav" class="nav clearfix">
+		<li class="nLi">
+			<h3><a href="/en/About/">About Us</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/en/About/Company/">Company Profile</a></li>
+				
+				<li><a href="/en/About/History/">History</a></li>
+				
+				<li><a href="/en/About/Culture/">Coporate Culture</a></li>
+				
+				<li><a href="/en/About/Greetings/">Director’s Greetings</a></li>
+				 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="/en/Products/">Products</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/en/Products/Bolting/">Bolting Tools</a></li>
+				
+				<li><a href="/en/Products/HydraulicCy/">Hydraulic Cylinders</a></li>
+				
+				<li><a href="/en/Products/HydraulicP/">Hydraulic Pumps</a></li>
+				
+				<li><a href="/en/Products/BearingP/">Bearing Pullers</a></li>
+				
+				<li><a href="/en/Products/FlangeS/">Flange Spreaders</a></li>
+				
+				<li><a href="/en/Products/HydraulicSM/">Hydraulic Swaging Machine</a></li>
+				
+				<li><a href="/en/Products/PartsA/">Parts & Accessories</a></li>
+				 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="/en/Applications/">Projects</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/en/Applications/BoltingT/">Bolting Tools</a></li>
+				
+				<li><a href="/en/Applications/HydraulicC/">Hydraulic Cylinders</a></li>
+				
+				<li><a href="/en/Applications/BearingP/">Bearing Pullers</a></li>
+				
+				<li><a href="/en/Applications/FlangeT/">Flange Tools</a></li>
+				
+				<li><a href="/en/Applications/HydralicP/">Hydralic Pumps</a></li>
+				
+				<li><a href="/en/Applications/HydraulicSM/">Hydraulic Swaging Machine</a></li>
+				 
+			</ul>
+		</li>	
+		<li class="nLi">
+			<h3><a href="/en/Support/">Support</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/en/Support/Technical/">Technical Support</a></li>
+				
+				<li><a href="/en/Support/Download/">Files Download</a></li>
+				 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="/en/News/">News and Events</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/en/News/Company/">Company News</a></li>
+				
+				<li><a href="/en/News/Customer/">Customer Visits</a></li>
+				 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="/en/Contact/">Contact us</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/en/Contact/Details/">Contact Details</a></li>
+				
+				<li><a href="/en/Contact/Maps/">Maps</a></li>
+				 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="/en/JoinUs/">Join us</a>|</h3>
+		</li>	 	
+		
+	</ul>
+
+	<script>
+	jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	</script>
+	
+
+	
+</div>
+<div class="warp">
+<div class="containter cl">
+	<div class="con_left">
+	
+		<div class="goods_item_left1 goods_list_left1">
+			<ul>
+				<h2>PRODUCTS</h2>
+				 
+				
+				<li><a href='/en/Products/Bolting/'>Bolting Tools<span>></span></a></li> 
+				
+				<li><a href='/en/Products/HydraulicCy/'>Hydraulic Cylinders<span>></span></a></li> 
+				
+				<li><a href='/en/Products/HydraulicP/'>Hydraulic Pumps<span>></span></a></li> 
+				
+				<li><a href='/en/Products/BearingP/'>Bearing Pullers<span>></span></a></li> 
+				
+				<li><a href='/en/Products/FlangeS/'>Flange Spreaders<span>></span></a></li> 
+				
+				<li><a href='/en/Products/HydraulicSM/'>Hydraulic Swaging Machine<span>></span></a></li> 
+				
+				<li><a href='/en/Products/PartsA/'>Parts & Accessories<span>></span></a></li> 
+				 
+			</ul>
+		</div>
+
+	
+	
+	
+	</div>
+	
+	<div class="con_right">
+	<div id="wzdh">
+		<ul>
+		<li><a href='/en/'>Home</a> > <a href='/en/Products/HydraulicCy/SychronousHJS/'>Sychronous Hydraulic Jacking S</a>  ></li>
+		</ul>
+	</div>
+	
+		<div class="DetailContent">
+		<h2 class="title">Synchronous PLC Hydraulic Lifting System</h2>
+		<div class="from">Source：Tarzan Instruments&nbsp;&nbsp;Time：2019-07-24</div>
+
+ 	
+<div align="center">  
+		<div class="picFocus">
+			<div class="bd">
+				<ul> 
+					<li><img src="/uploads/allimg/190724/1-1ZH4211937.png"> </li> 
+				</ul>
+			</div>
+
+			<div class="hd">
+				<ul>
+					<li><img src="/uploads/allimg/190724/1-1ZH4211937.png"> </li> 
+				</ul>
+			</div>
+
+		</div>
+		<script type="text/javascript">jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</script>
+
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var $tab_li = $('#tab ul li');
+	$tab_li.hover(function(){
+		$(this).addClass('selected').siblings().removeClass('selected');
+		var index = $tab_li.index(this);
+		$('div.tab_box > div').eq(index).show().siblings().hide();
+	});	
+});
+</script>
+
+		
+<div id="tab">
+	<ul class="tab_menu">
+    	<li class="selected">Introduction</li>
+        <li>Drawings</li>
+        <li>Parameters</li>
+    </ul>
+    <div class="tab_box">
+    	<div><div style="text-align: center;">
+	<strong>Synchronous PLC Hydraulic Lifting System</strong></div>
+Model number Lift points Integrated pump Accuracy (mm) Touch screen control Leveling Weighing CG Expandable<br />
+TII-SLCG 4, 8 yes 0.5,1 yes yes yes* no no<br />
+TII-ESS 4, 8, 12,24,32,64 yes 0.5,1 yes yes yes yes Yes<br />
+<br />
+<strong>Features:</strong><br />
+&bull; Number of Lifting Points: 4, 8, 12 or 16,24, 32,64<br />
+&bull; Accuracy Over Full Stroke: &plusmn; 0.5 mm<br />
+&bull; Each point support up to 2,000 tons, with 64 points system, the total max lifting capacity up to 128,000 ton. Customized cylinder capacity offered.<br />
+&bull; Maximum Operating Pressure: 700 bar<br />
+&bull; Frequency conversion, closed hydraulic oil circuit, self-adjusting electronic pulse control<br />
+&bull; Valve control button to averagely distribute jack loading to avoid overloading or slippery,<br />
+&bull; Advanced hydraulic oil speed control to maintain height precision, fast speed lifting and coming back, speed controllable<br />
+&bull; Load and stroke alarms for optimal safety<br />
+&bull; Colored touchable screen, Microsoft Window Interface to make settings, monitor all distribution of loading and data storage and recording capabilities<br />
+<br />
+<strong>Application Area</strong><br />
+&bull; Multi purpose: house translation/bridge construction or supporting,<br />
+&bull; Off-shore oil plant drilling platform supporting and equipment testing.<br />
+&bull; Antique pagoda, building leveling translation<br />
+&bull; Crude oil Tank wielding support<br />
+<br />
+<strong>Application Case</strong><br />
+&bull; Shanghai - Beijing High Speed Railway Yangtze River Bridge Project<br />
+&bull; Shanghai Baosteel testing and installing<br />
+&bull; The three Gorge Dam, hydropower plant installing<br />
+&bull; Zhangfei Temple translation in Sichuan<br />
+<br />
+<br />
+Please refer to our hydraulic cylinder catalog to choose your specified cylinders capacity, stroke, and collapsed height:<br />
+（1） Single acting hydraulic cylinder<br />
+ Capacity: 5-1000 ton<br />
+ Spring return for low tonnage models, outside power forced return<br />
+ Stroke: 500 mm<br />
+ Collapsed height: 1,000mm<br />
+（2） Double acting hydraulic cylinder<br />
+ Capacity: 100-1000 ton<br />
+ Spring return for low tonnage models, outside power forced return<br />
+ Stroke: up to 500 mm<br />
+ Collapsed height: max up to 1,000mm<br />
+ Allow for 5&deg; angle loading<br />
+</div>
+        <div class="hide">  <li>
+    <a href='/uploads/190724/1-1ZH42121055L.png' target='_blank'><img src='/uploads/190724/1-1ZH42121055L.png'  width='697'  border='0'/></a>
+    <br />
+    <a href='/uploads/190724/1-1ZH42121055L.png' target='_blank'></a>
+  </li></div>
+        <div class="hide"><div align="center" style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei&quot;; font-size: medium;">
+	<table align="left" border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse; margin-left: 6.75pt; margin-right: 6.75pt;">
+		<tbody>
+			<tr style="height: 37.5pt;">
+				<td style="width: 64.65pt; border: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 37.5pt;" width="86">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Model number</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 62.3pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="83">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Lift points</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 63.75pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="85">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Integrated pump</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 50.85pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="68">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Accuracy (mm)</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 80.25pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="107">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Touch screen control</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 49.5pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="66">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Leveling</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 54pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="72">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Weighing</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 45.65pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="61">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">CG</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 53.35pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="71">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Expandable</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+			</tr>
+			<tr style="height: 4.5pt;">
+				<td style="width: 64.65pt; border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-left: 1pt solid rgb(204, 204, 204); border-image: initial; border-top: none; padding: 0.75pt; height: 4.5pt;" width="86">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">TII-SLCG<o:p></o:p></span></p>
+				</td>
+				<td style="width: 62.3pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="83">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">4, 8<o:p></o:p></span></p>
+				</td>
+				<td style="width: 63.75pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="85">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 50.85pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="68">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">0.5,1<o:p></o:p></span></p>
+				</td>
+				<td style="width: 80.25pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="107">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 49.5pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="66">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 54pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="72">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes*<o:p></o:p></span></p>
+				</td>
+				<td style="width: 45.65pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="61">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">no<o:p></o:p></span></p>
+				</td>
+				<td style="width: 53.35pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="71">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">no<o:p></o:p></span></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 64.65pt; border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-left: 1pt solid rgb(204, 204, 204); border-image: initial; border-top: none; padding: 0.75pt;" width="86">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">TII-ESS<o:p></o:p></span></p>
+				</td>
+				<td style="width: 62.3pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="83">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">4, 8, 12,24,32,64<o:p></o:p></span></p>
+				</td>
+				<td style="width: 63.75pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="85">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 50.85pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="68">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">0.5,1<o:p></o:p></span></p>
+				</td>
+				<td style="width: 80.25pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="107">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 49.5pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="66">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 54pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="72">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 45.65pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="61">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 53.35pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="71">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Yes<o:p></o:p></span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p class="NormalNew" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0);">
+	<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">&nbsp;</span></p>
+<p class="NormalNew" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0);">
+	<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">&nbsp;</span></p>
+<p class="NormalNew" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0);">
+	<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">&nbsp;</span></p>
+<p align="left" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); line-height: 13.5pt;">
+	<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif; color: red;">&nbsp;</span></b></p>
+<p align="left" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); line-height: 13.5pt;">
+	&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 36pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0); text-indent: -18pt; line-height: 13.5pt;">
+	<span lang="EN-US" style="font-size: 10pt; font-family: Symbol; color: rgb(51, 51, 51);"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp; &nbsp;</span></span></p>
+</div>
+    </div>
+</div>
+ 
+
+</div>
+ 
+	</div>
+
+	<div class="cl"></div>
+</div>
+ 
+	
+	<div class="cl"></div>
+</div>
+ 
+<footer>
+	<ul>
+		<li>
+			<h2>About Us</h2>
+			
+			<a href='/en/About/Company/'>Company Profile</a>
+			
+			<a href='/en/About/History/'>History</a>
+			
+			<a href='/en/About/Culture/'>Coporate Culture</a>
+			
+			<a href='/en/About/Greetings/'>Director’s Greetings</a>
+			 
+		</li>
+		<li>
+			<h2>Products</h2>
+			
+			<a href='/en/Products/Bolting/'>Bolting Tools</a>
+			
+			<a href='/en/Products/HydraulicCy/'>Hydraulic Cylinders</a>
+			
+			<a href='/en/Products/HydraulicP/'>Hydraulic Pumps</a>
+			
+			<a href='/en/Products/BearingP/'>Bearing Pullers</a>
+			
+			<a href='/en/Products/FlangeS/'>Flange Spreaders</a>
+			
+			<a href='/en/Products/HydraulicSM/'>Hydraulic Swaging Machine</a>
+			
+			<a href='/en/Products/PartsA/'>Parts & Accessories</a>
+			 
+
+		</li>
+		
+		<li>
+			<h2>Projects</h2>
+			
+			<a href='/en/Applications/BoltingT/'>Bolting Tools</a>
+			
+			<a href='/en/Applications/HydraulicC/'>Hydraulic Cylinders</a>
+			
+			<a href='/en/Applications/BearingP/'>Bearing Pullers</a>
+			
+			<a href='/en/Applications/FlangeT/'>Flange Tools</a>
+			
+			<a href='/en/Applications/HydralicP/'>Hydralic Pumps</a>
+			
+			<a href='/en/Applications/HydraulicSM/'>Hydraulic Swaging Machine</a>
+			 
+		</li>
+		<li>
+			<h2>Support</h2>
+			
+			<a href='/en/Support/Technical/'>Technical Support</a>
+			
+			<a href='/en/Support/Download/'>Files Download</a>
+			 
+		</li> 
+		<li>
+			<h2>Contact us</h2>
+			<img src="/static/images/code.jpg" alt=""/><br />
+			<a class="tel"><img src="/static/images/tel.png" alt=""/>021-60674979</a> 
+
+		</li>
+		<div class="cl"></div>
+	</ul>
+	<div class="cl"></div>
+	<div class="corp">
+		Copyrigh © 2009-2020 TARZAN INSTURMENTS INTERNATINAL CO., LTD. All right reserved
+	</div> 
+</footer>
+ 
+
+ 
+</div>
+
+
+<!--手机+ipad-->
+<div class="hidden-lg">
+<script type="text/javascript">
+
+$(window).on('load', function(){
+
+	function removePreloader() {
+		var preLoader = $('.preLoader');
+		preLoader.fadeOut();
+	}
+	setTimeout(removePreloader, 250);
+});
+	
+$(function(){
+$('.head_menu').click(function(){
+	$('.head_menuc_box').slideToggle();
+})
+})
+</script>
+
+<!-- Preloader -->
+<div class="preLoader">
+	<div class="preloder-inner">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+</div>
+<!-- End Of Preloader -->
+<div class="sidebar" id="dowebok">
+  <div class="sidebar-wrapper" id="sidebar-wrapper">
+    <ul class="nav">
+		<li><a href="/en/">Home</a></li>
+		<li><a href="/en/About/">ABOUT</a></li>
+		<li><a href="/en/Products/">PRODUCTS</a></li>
+		<li><a href="/en/Applications/">APPLICATIONS</a></li>
+		<li><a href="/en/Support/">SUPPORT</a></li>
+		<li><a href="/en/News/">NEWS</a></li>
+		<li><a href="/en/Contact/">CONTACT</a></li>
+		<li><a href="/en/JoinUs/">JOB</a></li>
+		<li><a href="/cn/">中文版</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="header clearfix">
+  <h1 class="bl"><a href="/en/"><img src="/static/wap/images/logo.jpg" alt=""></a></h1>
+  <div id="menu" class="menu">
+    <!-- <img src="/static/wap/images/personal.png"  alt="" id="personal"> -->
+    <div class="ba"><img src="/static/wap/images/slide.png"  alt=""></div>
+  </div>
+</header> 
+
+<hr style="border-top: 0.001rem solid #cbcaca;"/>
+
+<div class="product-ii">
+  <div class="banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+	   
+		<div class="swiper-slide"><img src="/uploads/allimg/190724/1-1ZH4211937.png"></div> 
+		
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="product-parameter">
+    <div class="container">
+        <h3>GC-031</h3> 
+    </div>
+</div> -->
+
+<div class="product-ii-detail">
+    <div class="container">
+        <h3>Features</h3>
+        <div class="comm"><div style="text-align: center;">
+	<strong>Synchronous PLC Hydraulic Lifting System</strong></div>
+Model number Lift points Integrated pump Accuracy (mm) Touch screen control Leveling Weighing CG Expandable<br />
+TII-SLCG 4, 8 yes 0.5,1 yes yes yes* no no<br />
+TII-ESS 4, 8, 12,24,32,64 yes 0.5,1 yes yes yes yes Yes<br />
+<br />
+<strong>Features:</strong><br />
+&bull; Number of Lifting Points: 4, 8, 12 or 16,24, 32,64<br />
+&bull; Accuracy Over Full Stroke: &plusmn; 0.5 mm<br />
+&bull; Each point support up to 2,000 tons, with 64 points system, the total max lifting capacity up to 128,000 ton. Customized cylinder capacity offered.<br />
+&bull; Maximum Operating Pressure: 700 bar<br />
+&bull; Frequency conversion, closed hydraulic oil circuit, self-adjusting electronic pulse control<br />
+&bull; Valve control button to averagely distribute jack loading to avoid overloading or slippery,<br />
+&bull; Advanced hydraulic oil speed control to maintain height precision, fast speed lifting and coming back, speed controllable<br />
+&bull; Load and stroke alarms for optimal safety<br />
+&bull; Colored touchable screen, Microsoft Window Interface to make settings, monitor all distribution of loading and data storage and recording capabilities<br />
+<br />
+<strong>Application Area</strong><br />
+&bull; Multi purpose: house translation/bridge construction or supporting,<br />
+&bull; Off-shore oil plant drilling platform supporting and equipment testing.<br />
+&bull; Antique pagoda, building leveling translation<br />
+&bull; Crude oil Tank wielding support<br />
+<br />
+<strong>Application Case</strong><br />
+&bull; Shanghai - Beijing High Speed Railway Yangtze River Bridge Project<br />
+&bull; Shanghai Baosteel testing and installing<br />
+&bull; The three Gorge Dam, hydropower plant installing<br />
+&bull; Zhangfei Temple translation in Sichuan<br />
+<br />
+<br />
+Please refer to our hydraulic cylinder catalog to choose your specified cylinders capacity, stroke, and collapsed height:<br />
+（1） Single acting hydraulic cylinder<br />
+ Capacity: 5-1000 ton<br />
+ Spring return for low tonnage models, outside power forced return<br />
+ Stroke: 500 mm<br />
+ Collapsed height: 1,000mm<br />
+（2） Double acting hydraulic cylinder<br />
+ Capacity: 100-1000 ton<br />
+ Spring return for low tonnage models, outside power forced return<br />
+ Stroke: up to 500 mm<br />
+ Collapsed height: max up to 1,000mm<br />
+ Allow for 5&deg; angle loading<br />
+</div>  
+	</div>
+</div>
+
+<div class="product-parameter">
+    <div class="container">
+        <h3>Parameter</h3> 
+		<div class="comm">  <li>
+    <a href='/uploads/190724/1-1ZH42121055L.png' target='_blank'><img src='/uploads/190724/1-1ZH42121055L.png'  width='697'  border='0'/></a>
+    <br />
+    <a href='/uploads/190724/1-1ZH42121055L.png' target='_blank'></a>
+  </li></div>
+    </div>
+</div>
+
+<!-- <div class="product-ii-detail">
+    <div class="container">
+        <h3>参数</h3>
+        <div class="comm"><div align="center" style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei&quot;; font-size: medium;">
+	<table align="left" border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse; margin-left: 6.75pt; margin-right: 6.75pt;">
+		<tbody>
+			<tr style="height: 37.5pt;">
+				<td style="width: 64.65pt; border: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 37.5pt;" width="86">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Model number</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 62.3pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="83">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Lift points</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 63.75pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="85">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Integrated pump</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 50.85pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="68">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Accuracy (mm)</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 80.25pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="107">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Touch screen control</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 49.5pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="66">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Leveling</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 54pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="72">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Weighing</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 45.65pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="61">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">CG</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+				<td style="width: 53.35pt; border-top: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-image: initial; border-left: none; padding: 0.75pt; height: 37.5pt;" width="71">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Expandable</span></b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif;"><o:p></o:p></span></p>
+				</td>
+			</tr>
+			<tr style="height: 4.5pt;">
+				<td style="width: 64.65pt; border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-left: 1pt solid rgb(204, 204, 204); border-image: initial; border-top: none; padding: 0.75pt; height: 4.5pt;" width="86">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">TII-SLCG<o:p></o:p></span></p>
+				</td>
+				<td style="width: 62.3pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="83">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">4, 8<o:p></o:p></span></p>
+				</td>
+				<td style="width: 63.75pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="85">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 50.85pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="68">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">0.5,1<o:p></o:p></span></p>
+				</td>
+				<td style="width: 80.25pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="107">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 49.5pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="66">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 54pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="72">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes*<o:p></o:p></span></p>
+				</td>
+				<td style="width: 45.65pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="61">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">no<o:p></o:p></span></p>
+				</td>
+				<td style="width: 53.35pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt; height: 4.5pt;" width="71">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">no<o:p></o:p></span></p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 64.65pt; border-right: 1pt solid rgb(204, 204, 204); border-bottom: 1pt solid rgb(204, 204, 204); border-left: 1pt solid rgb(204, 204, 204); border-image: initial; border-top: none; padding: 0.75pt;" width="86">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">TII-ESS<o:p></o:p></span></p>
+				</td>
+				<td style="width: 62.3pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="83">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">4, 8, 12,24,32,64<o:p></o:p></span></p>
+				</td>
+				<td style="width: 63.75pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="85">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 50.85pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="68">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">0.5,1<o:p></o:p></span></p>
+				</td>
+				<td style="width: 80.25pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="107">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 49.5pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="66">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 54pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="72">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 45.65pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="61">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">yes<o:p></o:p></span></p>
+				</td>
+				<td style="width: 53.35pt; border-top: none; border-left: none; border-bottom: 1pt solid rgb(204, 204, 204); border-right: 1pt solid rgb(204, 204, 204); padding: 0.75pt;" width="71">
+					<p align="center" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: center; line-height: 12.75pt;">
+						<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">Yes<o:p></o:p></span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p class="NormalNew" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0);">
+	<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">&nbsp;</span></p>
+<p class="NormalNew" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0);">
+	<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">&nbsp;</span></p>
+<p class="NormalNew" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0);">
+	<span lang="EN-US" style="font-family: 微软雅黑, sans-serif;">&nbsp;</span></p>
+<p align="left" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); line-height: 13.5pt;">
+	<b><span lang="EN-US" style="font-family: 微软雅黑, sans-serif; color: red;">&nbsp;</span></b></p>
+<p align="left" class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); line-height: 13.5pt;">
+	&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0.0001pt 36pt; font-size: 10.5pt; font-family: &quot;Times New Roman&quot;, serif; text-align: justify; color: rgb(0, 0, 0); text-indent: -18pt; line-height: 13.5pt;">
+	<span lang="EN-US" style="font-size: 10pt; font-family: Symbol; color: rgb(51, 51, 51);"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp; &nbsp;</span></span></p>
+</div>  
+	</div>
+</div> -->
+
+
+<div class="container">
+    <div class="product-ii-picbox">
+        <h3>recommend</h3>
+		
+		 <div class="col-2">
+		  <a href="/en/Products/HydraulicCy/SychronousHJS/2019/0724/91.html">
+			<div class="img_box"><div><img src="/uploads/allimg/190724/1-1ZH4211937-lp.png"/></div>
+				<h3>Synchronous PLC Hydraulic Lifting</h3>
+			</div></a>
+       </div>
+<div class="col-2">
+		  <a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/90.html">
+			<div class="img_box"><div><img src="/uploads/allimg/190724/1-1ZH4211544-lp.jpg"/></div>
+				<h3>Double Acting Hollow Plunger Hydr</h3>
+			</div></a>
+       </div>
+<div class="col-2">
+		  <a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/86.html">
+			<div class="img_box"><div><img src="/uploads/allimg/190724/1-1ZH4210445-lp.jpg"/></div>
+				<h3>Double Acting High Tonnage Hydrau</h3>
+			</div></a>
+       </div>
+<div class="col-2">
+		  <a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/83.html">
+			<div class="img_box"><div><img src="/uploads/allimg/190724/1-1ZH4205629-lp.jpg"/></div>
+				<h3>Single Acting High Tonnage Locknu</h3>
+			</div></a>
+       </div>
+ 
+        
+    </div>
+</div>
+
+<div class="copyright">
+	<h2> &copy; Tarzan Instruments International Co., Ltd.  All rights reserved.</h2> 
+</div>
+<script type="text/javascript" src="/static/wap/js/index.js"></script>
+<script type="text/javascript">
+
+var banner = new Swiper ('.banner .swiper-container', {
+  loop: true,
+  autoplay : true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable :true
+  },
+});
+</script>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

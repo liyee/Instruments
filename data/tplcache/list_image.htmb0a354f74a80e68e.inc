@@ -1,0 +1,46 @@
+<?php
+$z[0]=Array("field","",284,303);
+$z[0][4]=array();
+$z[0][4]['name']="title";
+$z[1]=Array("global","",304,330);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",371,393);
+$z[2][4]=array();
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",433,484);
+$z[3][4]=array();
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("global","",578,604);
+$z[4][4]=array();
+$z[4][4]['name']="cfg_cmspath";
+$z[5]=Array("global","",699,725);
+$z[5][4]=array();
+$z[5][4]['name']="cfg_cmspath";
+$z[6]=Array("global","",764,790);
+$z[6][4]=array();
+$z[6][4]['name']="cfg_cmspath";
+$z[7]=Array("include","",857,894);
+$z[7][4]=array();
+$z[7][4]['filename']="header.htm";
+$z[8]=Array("channel","\r\n				<li><a href='[field:typeurl/]'>[field:typename/]<span>></span></a></li>\r\n				",1065,1304);
+$z[8][4]=array();
+$z[8][4]['typeid']="11";
+$z[8][4]['type']="son";
+$z[8][4]['currentstyle']="<li><a href='~typelink~' class='thisclass'>~typename~<span>></span></a></li>";
+$z[9]=Array("field","",1401,1430);
+$z[9][4]=array();
+$z[9][4]['name']="position";
+$z[10]=Array("list","\r\n	<div class=\"goods_item_list\">\r\n		<div class=\"goodlist_content\">\r\n			<a href=\"[field:arcurl/]\"><img src=\"[field:litpic/]\" alt=\"Hydraulic Cylinders\"></a>\r\n			<p class=\"good_title\"><a href=\"[field:arcurl/]\">[field:title/]</a></p>\r\n			<p class=\"good_desc\">[field:description/]</p>\r\n			<p class=\"good_price\"><a href=\"[field:arcurl/]\">more</a></p>\r\n		</div>\r\n	</div>\r\n	",1459,1861);
+$z[10][4]=array();
+$z[10][4]['pagesize']="6";
+$z[11]=Array("pagelist","",1895,1966);
+$z[11][4]=array();
+$z[11][4]['listsize']="5";
+$z[11][4]['listitem']="info,index,end,pre,next,pageno";
+$z[12]=Array("include","",2066,2103);
+$z[12][4]=array();
+$z[12][4]['filename']="footer.htm";
+
+?>

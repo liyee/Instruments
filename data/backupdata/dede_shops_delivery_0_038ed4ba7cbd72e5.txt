@@ -1,0 +1,4 @@
+INSERT INTO `dede_shops_delivery` VALUES('','','','','');
+INSERT INTO `dede_shops_delivery` VALUES('','','','','');
+INSERT INTO `dede_shops_delivery` VALUES('','','','','');
+INSERT INTO `dede_shops_delivery` VALUES('','','','','');

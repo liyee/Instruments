@@ -1,0 +1,6 @@
+INSERT INTO `dede_plus` VALUES('','','','','','','');
+INSERT INTO `dede_plus` VALUES('','','','','','','');
+INSERT INTO `dede_plus` VALUES('','','','','','','');
+INSERT INTO `dede_plus` VALUES('','','','','','','');
+INSERT INTO `dede_plus` VALUES('','','','','','','');
+INSERT INTO `dede_plus` VALUES('','','','','','','');

@@ -1,0 +1,2 @@
+INSERT INTO `dede_freelist` VALUES('','','','','','','','','','','','','');
+INSERT INTO `dede_freelist` VALUES('','','','','','','','','','','','','');

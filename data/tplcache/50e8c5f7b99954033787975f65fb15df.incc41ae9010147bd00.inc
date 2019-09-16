@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("pagestyle","",0,91);
+$z[0][4]=array();
+$z[0][4]['maxwidth']="800";
+$z[0][4]['pagepicnum']="12";
+$z[0][4]['ddmaxwidth']="200";
+$z[0][4]['row']="3";
+$z[0][4]['col']="4";
+$z[0][4]['value']="2";
+$z[1]=Array("img"," /uploads/allimg/190724/1-1ZH4194456.jpg ",93,259);
+$z[1][4]=array();
+$z[1][4]['ddimg']="/uploads/allimg/190724/1-1ZH4194456.jpg";
+$z[1][4]['text']="Electric hydraulic pump";
+$z[1][4]['width']="600";
+$z[1][4]['height']="718";
+$z[2]=Array("img"," /uploads/allimg/190724/1-1ZH4194457.jpg ",261,427);
+$z[2][4]=array();
+$z[2][4]['ddimg']="/uploads/allimg/190724/1-1ZH4194457.jpg";
+$z[2][4]['text']="Electric hydraulic pump";
+$z[2][4]['width']="600";
+$z[2][4]['height']="742";
+$z[3]=Array("img"," /uploads/allimg/190724/1-1ZH4194458.jpg ",429,595);
+$z[3][4]=array();
+$z[3][4]['ddimg']="/uploads/allimg/190724/1-1ZH4194458.jpg";
+$z[3][4]['text']="Electric hydraulic pump";
+$z[3][4]['width']="600";
+$z[3][4]['height']="632";
+$z[4]=Array("img"," /uploads/allimg/190724/1-1ZH4194459.jpg ",597,763);
+$z[4][4]=array();
+$z[4][4]['ddimg']="/uploads/allimg/190724/1-1ZH4194459.jpg";
+$z[4][4]['text']="Electric hydraulic pump";
+$z[4][4]['width']="600";
+$z[4][4]['height']="854";
+$z[5]=Array("img"," /uploads/allimg/190724/1-1ZH4194459-50.jpg ",765,937);
+$z[5][4]=array();
+$z[5][4]['ddimg']="/uploads/allimg/190724/1-1ZH4194459-50.jpg";
+$z[5][4]['text']="Electric hydraulic pump";
+$z[5][4]['width']="600";
+$z[5][4]['height']="527";
+
+?>

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chorme=1">
+<meta name="viewport" content="target-densitydpi=medium-dpi,width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+<title>联系我们</title>
+<link rel="icon" href="./favicon.ico" mce_href="./favicon.ico" type="image/x-icon"/>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="./favicon.ico" mce_href="./favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="statics/css/swiper.css"/>
+<link rel="stylesheet" href="statics/css/index.css"/>
+<script type="text/javascript" src="statics/js/jquery.js"></script>
+<script type="text/javascript" src="statics/js/change-html-fz.js"></script>
+<script type="text/javascript" src="statics/js/simpler-sidebar.min.js"></script>
+<script type="text/javascript" src="statics/js/swiper.js" ></script>
+</head>
+<body>
+
+  <script type="text/javascript">
+  $(function(){
+    $('.head_menu').click(function(){
+        $('.head_menuc_box').slideToggle();
+    })
+  })
+</script>
+  <div class="sidebar" id="dowebok">
+  <div class="sidebar-wrapper" id="sidebar-wrapper">
+    <ul class="nav">
+		<li><a href="">网站首页</a></li>
+		<li><a href="">关于我们</a></li>
+		<li><a href="">产品中心</a></li>
+		<li><a href="">应用案例 </a></li>
+		<li><a href="">技术支持</a></li>
+		<li><a href="">新闻中心</a></li>
+		<li><a href="">联系我们</a></li>
+		<li><a href="">人才招聘</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="header clearfix">
+  <h1 class="bl"><a href=""><img src="statics/images/logo.jpg" alt=""></a></h1>
+  <div id="menu" class="menu">
+    <!-- <img src="statics/images/personal.png"  alt="" id="personal"> -->
+    <div class="ba"><img src="statics/images/slide.png"  alt=""></div>
+  </div>
+</header><div class="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="statics/images/banner2.jpg"></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<div class="head_menu">
+    <div class="head_menu_child">联系我们<span><img src="statics/images/fuhao.png"/></span></div>
+
+</div>
+<div class="head_menuc_box">
+    <div class="head_menu_child"><a href="">联系方式</a></div>
+</div>
+
+<div class="container">
+    <div class="contactus_title">
+        <h3>联系方式</h3>
+        <h4>CONTACT US</h4>
+        <div class="transiton_slide">
+            <div class="tslide"></div>
+        </div>
+    </div>
+    <div class="contactus_addrees">
+<p><h4>上海泰杉机械有限公司</h4><p>地址：浙江省宁波市长兴路689弄21号10幢112室</p><p>电话：186 021 16429</p><p>邮箱：sales@tarzaninstruments.com</p><p><br/></p></p>
+    </div>
+    
+    <div class="online_message">
+          <form action="" name ="form1"  id="form1"  enctype="multipart/form-data" method="post" onsubmit="return checkGuestData(this);">
+            <div class="online_message-title">
+                <h3>在线留言</h3>
+                <h4>ONLINE MESSAGE</h4>
+            </div>
+            <div class="online_message-content">
+                <input type="text" name="name" placeholder="姓名">
+                <input type="text" name="phone" placeholder="电话">
+                <input type="text" name="email" placeholder="邮箱">
+							 <input type="hidden" name="validatecode" id="validatecode" value="3cfb0b465bc61e43beaaf0b0f10be36e"/>                
+                <textarea name="content" placeholder="内容"></textarea>
+            </div>
+            <div class="btn_message">
+              <input type="submit" name="" value="提交" class="message_submit">
+            </div>
+        </form>
+    </div>
+  
+</div>
+
+<div class="copyright">
+	<h2>版权所有 &copy; 上海泰杉机械有限公司</h2> 
+</div>
+<script type="text/javascript" src="statics/js/index.js"></script>
+<script type="text/javascript">
+
+var banner = new Swiper ('.banner .swiper-container', {
+  loop: true,
+  autoplay : true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable :true
+  },
+});
+</script>
+<script language="javascript">
+            function Trim(str) {
+                return (str + '').replace(/(\s+)$/g, '').replace(/^\s+/g, '');
+            }
+            // JavaScript Document
+            //在线留言 表单验证
+            function checkGuestData(theForm){
+                if (Trim(theForm.name.value).length == 0){
+                    alert("姓名不能为空!");
+                    theForm.name.focus();
+                    return false;
+                }
+
+                if (Trim(theForm.phone.value).length == 0){
+                    alert("电话不能为空!");
+                    theForm.phone.focus();
+                    return false;
+                }                
+
+                
+                if (Trim(theForm.email.value).length == 0){
+                    alert("邮箱不能为空!");
+                    theForm.email.focus();
+                    return false;
+                }               
+                var ema;
+                ema=isEmail(Trim(theForm.email.value)); 
+                if(ema==false){
+                    alert("邮箱格式有误，请重填");
+                    theForm.email.focus();
+                    return false;  
+                }
+              
+                if (Trim(theForm.content.value).length == 0){
+                    alert("内容不能为空!");
+                    theForm.content.focus();
+                    return false;
+                }
+           
+               
+            }
+
+                function isEmail(str){ 
+            	   var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/; 
+            	   return reg.test(str); 
+            	} 
+        </script>
+</body>
+</html>

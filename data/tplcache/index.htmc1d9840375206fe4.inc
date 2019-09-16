@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("global","",388,418);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_description";
+$z[1]=Array("global","",455,482);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_keywords";
+$z[2]=Array("global","",576,602);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_cmspath";
+$z[3]=Array("include","",801,838);
+$z[3][4]=array();
+$z[3][4]['filename']="header.htm";
+$z[4]=Array("arclist","\r\n		<dl>\r\n		<a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\"><img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\" /></a>\r\n		<h2>[field:title/]</h2>\r\n		<p>[field:info/]...</p>\r\n		</dl>\r\n		",5093,5352);
+$z[4][4]=array();
+$z[4][4]['limit']="0,1";
+$z[4][4]['infolen']="600";
+$z[5]=Array("arclist","\r\n			<li><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></li>\r\n			",5365,5526);
+$z[5][4]=array();
+$z[5][4]['typeid']="";
+$z[5][4]['row']="6";
+$z[5][4]['titlelen']="80";
+$z[5][4]['infolen']="230";
+$z[6]=Array("type","[field:typelink /]",6368,6420);
+$z[6][4]=array();
+$z[6][4]['typeid']="3";
+$z[7]=Array("type","[field:typelink /]",6498,6551);
+$z[7][4]=array();
+$z[7][4]['typeid']="52";
+$z[8]=Array("type","[field:typelink /]",6629,6681);
+$z[8][4]=array();
+$z[8][4]['typeid']="6";
+$z[9]=Array("type","[field:typelink /]",6865,6918);
+$z[9][4]=array();
+$z[9][4]['typeid']="11";
+$z[10]=Array("arclist","	\r\n		<li><a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:litpic/]\" alt=\"\" /><p>[field:title/]</p></a></li>\r\n		",7169,7358);
+$z[10][4]=array();
+$z[10][4]['row']="12";
+$z[10][4]['typeid']="11";
+$z[10][4]['titlelen']="32";
+$z[11]=Array("include","",7593,7630);
+$z[11][4]=array();
+$z[11][4]['filename']="footer.htm";
+
+?>

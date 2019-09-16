@@ -1,0 +1,3 @@
+INSERT INTO `dede_moneycard_type` VALUES('','','','');
+INSERT INTO `dede_moneycard_type` VALUES('','','','');
+INSERT INTO `dede_moneycard_type` VALUES('','','','');

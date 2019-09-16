@@ -1,0 +1,2 @@
+INSERT INTO `dede_member_model` VALUES('','','','','','','');
+INSERT INTO `dede_member_model` VALUES('','','','','','','');

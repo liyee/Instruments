@@ -1,0 +1,2 @@
+INSERT INTO `dede_sys_set` VALUES('','','');
+INSERT INTO `dede_sys_set` VALUES('','','');

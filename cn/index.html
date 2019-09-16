@@ -1,0 +1,833 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" /> 
+<title>上海泰杉有限公司 - Tarzan Instruments International Co., Ltd.</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script src="https://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.2.1.1.js"></script>
+<!-- <link rel='stylesheet' type='text/css' href='/static/css/style.css'/> -->
+<script src="/static/js/jquery.SuperSlide.2.1.3.js"></script>
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script>
+function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        // document.writeln("您的浏览设备为：");  
+        if(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            // alert("手机浏览！");  
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">');
+			document.write('<link rel="stylesheet" href="/static/wap/css/swiper.css" />');
+			document.write('<link rel="stylesheet" href="/static/wap/css/index.css" />');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/jquery.js"><\/script>');
+			
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/change-html-fz.js"><\/script>');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/simpler-sidebar.min.js"><\/script>');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/swiper.js"><\/script>');
+			document.write('<script type="text/javascript" charset="utf-8" src="/static/wap/js/SuperSlide.js"><\/script>');
+			
+        } else {
+
+            // alert("PC浏览！");  
+			document.write('<meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">');
+            document.write('<link rel="stylesheet" href="/static/css/style.css" />'); 
+		}
+    }
+    browserRedirect();
+
+</script>
+
+</head>
+
+<body>
+  <!-- visible-lg hidden-sm -->
+<div class="visible-lg">
+
+
+<header>
+	<ul>
+		<dl class="logo"><a href="/"><img src="/static/images/logo.jpg" /></a></dl>
+		<div class="version fl">
+		<a href="/cn/" rel="nofollow">中文版</a> | <a href="/en/" rel="nofollow">ENGLISH</a>	
+		</div>
+		<div class="search">
+			<form name="formsearch" action="/plus/search.php">
+				<input type="hidden" name="kwtype" value="0" />
+				<!-- <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+			 -->
+				<input name="q" type="text" id="search-keyword" class="ser-text" placeholder="Search" value="">
+				<button type="submit" class="ser-sub"></button>
+			</form> 
+		</div>
+
+	</ul>
+</header>
+ 
+
+<div class="menu cl">
+
+	<ul id="nav" class="nav clearfix">
+		<li class="nLi">
+			<h3><a href="/cn/about/">关于我们</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/cn/about/Company/">公司介绍</a></li>
+				
+				<li><a href="/cn/about/History/">发展历程</a></li>
+				
+				<li><a href="/cn/about/Culture/">企业文化</a></li>
+				
+				<li><a href="/cn/about/Directors_Message/">董事长致辞</a></li>
+				 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="/cn/Products/">产品中心</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/cn/Products/Bolting_tools/">螺栓工具</a></li>
+				
+				<li><a href="/cn/Products/Cylinders/">液压油缸</a></li>
+				
+				<li><a href="/cn/Products/Hydraulic/">液压泵站</a></li>
+				
+				<li><a href="/cn/Products/Bearing/">拔轮器</a></li>
+				
+				<li><a href="/cn/Products/Flange/">法兰分离器</a></li>
+				
+				<li><a href="/cn/Products/Swaging/">压套机</a></li>
+				
+				<li><a href="/cn/Products/Parts/">配件</a></li>
+				 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="/cn/Projects/">产品应用案例</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/cn/Projects/Bolting/">螺栓工具</a></li>
+				
+				<li><a href="/cn/Projects/Hydraulic/">液压油缸</a></li>
+				
+				<li><a href="/cn/Projects/Bearing/">拔轮器</a></li>
+				
+				<li><a href="/cn/Projects/Flange/">法兰工具</a></li>
+				
+				<li><a href="/cn/Projects/Pumps/">液压泵站</a></li>
+				
+				<li><a href="/cn/Projects/Swaging/">压套机</a></li>
+				 
+			</ul>
+		</li>	
+		<li class="nLi">
+			<h3><a href="/cn/Service/">技术及售后服务</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/cn/Service/Support/">技术支持</a></li>
+				
+				<li><a href="/cn/Service/Download/">资料下载</a></li>
+				 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="/cn/News/">新闻中心</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/cn/News/Company/">公司新闻</a></li>
+				
+				<li><a href="/cn/News/Customer/">客户来访</a></li>
+				 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="/cn/Contact/">联系我们</a>|</h3>
+			<ul class="sub">
+				
+				<li><a href="/cn/Contact/Details/">联系方式</a></li>
+				
+				<li><a href="/cn/Contact/Maps/">地图</a></li>
+				 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="/cn/job/">人才招聘</a>|</h3>
+		</li>	
+		
+		
+	</ul>
+
+	<script>
+	jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	</script>
+	
+
+	
+</div>
+
+<div class="c-banner">
+	<div class="banner">
+		<ul>
+			<li><a href=""><img src="/static/images/banner2.jpg"></a></li>
+			<li><a href=""><img src="/static/images/banner.jpg"></a></li>
+			<li><a href=""><img src="/static/images/banner2.jpg"></a></li>
+		</ul>
+	</div>
+	<!-- <div class="nexImg">
+		 
+	</div>
+	<div class="preImg">
+		 
+	</div> -->
+	<div class="jumpBtn">
+		<ul>
+			<li jumpImg="0"></li>
+			<li jumpImg="1"></li>
+			<li jumpImg="2"></li>
+		</ul>
+	</div>
+</div>
+ 
+<script type="text/javascript">
+//定时器返回值
+var time=null;
+//记录当前位子
+var nexImg = 0;
+//用于获取轮播图图片个数
+var imgLength = $(".c-banner .banner ul li").length;
+//当时动态数据的时候使用,上面那个删除
+// var imgLength =0;
+//设置底部第一个按钮样式
+$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+
+//页面加载
+$(document).ready(function(){
+	// dynamicData();
+	//启动定时器,设置时间为3秒一次
+	time =setInterval(intervalImg,3000);
+});
+
+//点击上一张
+$(".preImg").click(function(){
+	//清楚定时器
+	clearInterval(time);
+	var nowImg = nexImg;
+	nexImg = nexImg-1;
+	console.log(nexImg);
+	if(nexImg<0){
+		nexImg=imgLength-1;
+	}
+	//底部按钮样式设置
+	$(".c-banner .jumpBtn ul li").css("background-color","white");
+	$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+	
+	//将当前图片试用绝对定位,下一张图片试用相对定位
+	$(".c-banner .banner ul img").eq(nowImg).css("position","absolute");
+	$(".c-banner .banner ul img").eq(nexImg).css("position","relative");
+	
+	//轮播淡入淡出
+	$(".c-banner .banner ul li").eq(nexImg).css("display","block");
+	$(".c-banner .banner ul li").eq(nexImg).stop().animate({"opacity":1},1000);
+	$(".c-banner .banner ul li").eq(nowImg).stop().animate({"opacity":0},1000,function(){
+		$(".c-banner ul li").eq(nowImg).css("display","none");
+	});
+	
+	//启动定时器,设置时间为3秒一次
+	time =setInterval(intervalImg,3000);
+})
+
+//点击下一张
+$(".nexImg").click(function(){
+	clearInterval(time);
+	intervalImg();
+	time =setInterval(intervalImg,3000);
+})
+
+//轮播图
+function intervalImg(){
+	if(nexImg<imgLength-1){
+		nexImg++;
+	}else{
+		nexImg=0;
+	}
+	
+	//将当前图片试用绝对定位,下一张图片试用相对定位
+	$(".c-banner .banner ul img").eq(nexImg-1).css("position","absolute");
+	$(".c-banner .banner ul img").eq(nexImg).css("position","relative");
+	
+	$(".c-banner .banner ul li").eq(nexImg).css("display","block");
+	$(".c-banner .banner ul li").eq(nexImg).stop().animate({"opacity":1},1000);
+	$(".c-banner .banner ul li").eq(nexImg-1).stop().animate({"opacity":0},1000,function(){
+		$(".c-banner .banner ul li").eq(nexImg-1).css("display","none");
+	});
+	$(".c-banner .jumpBtn ul li").css("background-color","white");
+	$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+}
+
+//轮播图底下按钮
+//动态数据加载的试用应放在请求成功后执行该代码,否则按钮无法使用
+$(".c-banner .jumpBtn ul li").each(function(){
+	//为每个按钮定义点击事件
+	$(this).click(function(){
+		clearInterval(time);
+		$(".c-banner .jumpBtn ul li").css("background-color","white");
+		jumpImg = $(this).attr("jumpImg");
+		if(jumpImg!=nexImg){
+			var after =$(".c-banner .banner ul li").eq(jumpImg);
+			var befor =$(".c-banner .banner ul li").eq(nexImg);
+			
+			//将当前图片试用绝对定位,下一张图片试用相对定位
+			$(".c-banner .banner ul img").eq(nexImg).css("position","absolute");
+			$(".c-banner .banner ul img").eq(jumpImg).css("position","relative");
+			
+			after.css("display","block");
+			after.stop().animate({"opacity":1},1000);
+			befor.stop().animate({"opacity":0},1000,function(){
+				befor.css("display","none");
+			});
+			nexImg=jumpImg;
+		}
+		$(this).css("background-color","black");
+		time =setInterval(intervalImg,3000);
+	});
+});
+
+ 
+</script>
+
+ 
+<div class="warp">
+<div class="containter cl">
+	<div class="index_l fl">
+		<div class="title"><span class="head">新闻中心</span></div>
+		<dl>
+		<a href="/cn/News/Customer/2019/0723/44.html" title="来自澳大利亚铁矿石开采业的一批客户来我厂参观"><img src="/uploads/allimg/190723/1-1ZH321252R03-lp.jpg" alt="来自澳大利亚铁矿石开采业的一批客户来我厂参观" /></a>
+		<h2>来自澳大利亚铁矿石开采业的一批客户来我厂参观</h2>
+		<p>2016年7月27日，来自澳大利亚铁矿石开采业的一批客户来我厂参观，他们向宁波英诗楚机械有限公司询问并购买了一些液压扭矩扳手和千斤顶样品。此次工厂参观的目的是 检查我们的制造设施，...</p>
+		</dl>
+
+		<ul>
+			<li><a href="/cn/News/Company/2019/0723/47.html" title="新加坡客户定制集装箱液压千斤顶">新加坡客户定制集装箱液压千斤顶</a></li>
+<li><a href="/cn/News/Customer/2019/0723/46.html" title="马来西亚客户来访参观工厂">马来西亚客户来访参观工厂</a></li>
+<li><a href="/cn/News/Customer/2019/0723/45.html" title="巴西客户来访">巴西客户来访</a></li>
+<li><a href="/cn/News/Customer/2019/0723/44.html" title="来自澳大利亚铁矿石开采业的一批客户来我厂参观">来自澳大利亚铁矿石开采业的一批客户来我厂参观</a></li>
+<li><a href="/cn/News/Company/2019/0718/1.html" title="上海泰杉机械有限公司--专业的液压工具生产商">上海泰杉机械有限公司--专业的液压工具生产商</a></li>
+
+		</ul> 
+	</div>
+	<div class="index_r fr">
+		<div class="title"><span class="head">合作共赢</span></div>
+		<ul>
+			<a href="/cn/Projects/" title=""><img src="/static/images/hez.jpg" alt="" /></a>
+		</ul>
+	</div>
+	<div class="cl"></div>
+</div>
+
+<div class="containter cl">
+	<div class="about_l fl">
+		<h2></h2>
+		<p>宁波英诗楚机械限公司由一批专业技术人员成立于2004在英国伦敦成立。成立之初，我们便把质量、技术作为我们的生命线。<br />
+ 
+2008年，我们把生产转移到塔山国际在中国的合资企业---宁波英诗楚有限公司。至此，我们成为以客户为导向、以技术驱动、注重质量的跨国企业。我们拥有自己的研发中心、营销中心、成为销售及制造为一体的液压工具生产商。 </p>
+	</div>
+	<ul class="about_2">
+		<li><a href="/cn/about/Company/" title=""><img src="/static/images/a1.jpg" alt="" /></a></li>
+		<li><a href="/cn/Projects/" title=""><img src="/static/images/a2.jpg" alt="" /></a></li>
+		<li><a href="/cn/about/Culture/" title=""><img src="/static/images/a3.jpg" alt="" /></a></li>
+	</ul>
+</div>
+<div class="containter cl probox">
+	<dl class="pro_t"><p><span>PRODUCTS</span> 产品中心</p><a href="/cn/Products/"><span class="more">More ></span></a></dl>
+	
+	<div class="picScroll-left">
+		<div class="hd">
+			<a class="next"></a>
+			<ul></ul>
+			<a class="prev"></a>
+			<span class="pageState"></span>
+		</div>
+
+	<div class="bd">
+	<ul class="pro">
+		<li><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html" title="钢丝绳压套机"><img src="/uploads/allimg/190723/1-1ZH3210459-lp.jpg" alt="" /><p>钢丝绳压套机</p></a></li>
+<li><a href="/cn/Products/Parts/Hydraulic/2019/0723/43.html" title="油管"><img src="/uploads/allimg/190723/1-1ZH3211308-lp.jpg" alt="" /><p>油管</p></a></li>
+<li><a href="/cn/Products/Parts/Couplings/2019/0723/42.html" title="超高压快速接头"><img src="/uploads/allimg/190723/1-1ZH3211054-lp.png" alt="" /><p>超高压快速接头</p></a></li>
+<li><a href="/cn/Products/Bearing/Self-centering/2019/0723/40.html" title="一体式液压自对中拔轮器"><img src="/uploads/allimg/190723/1-1ZH3205123-lp.jpg" alt="" /><p>一体式液压自对中拔轮器</p></a></li>
+<li><a href="/cn/Products/Bearing/Mechanic/2019/0723/39.html" title="一体式套装拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204912-lp.jpg" alt="" /><p>一体式套装拔轮器</p></a></li>
+<li><a href="/cn/Products/Bearing/Mechanic/2019/0723/38.html" title="机械同步式拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204J3-lp.png" alt="" /><p>机械同步式拔轮器</p></a></li>
+<li><a href="/cn/Products/Bearing/Split/2019/0723/37.html" title="分体式液压自对中拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204610-lp.jpg" alt="" /><p>分体式液压自对中拔轮器</p></a></li>
+<li><a href="/cn/Products/Bearing/Multi-function/2019/0723/36.html" title="多功能组合式套装拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204306-lp.jpg" alt="" /><p>多功能组合式套装拔轮器</p></a></li>
+<li><a href="/cn/Products/Bearing/Cart-loaded/2019/0723/35.html" title="车载液压拔轮器"><img src="/uploads/allimg/190723/1-1ZH3203U7.jpg" alt="" /><p>车载液压拔轮器</p></a></li>
+<li><a href="/cn/Products/Flange/Hydraulic/2019/0722/34.html" title="液压法兰分离器"><img src="/uploads/allimg/190722/1-1ZH21P414-lp.jpg" alt="" /><p>液压法兰分离器</p></a></li>
+<li><a href="/cn/Products/Flange/Mechanic/2019/0722/33.html" title="机械式法兰分离器"><img src="/uploads/allimg/190722/1-1ZH21K621-lp.jpg" alt="" /><p>机械式法兰分离器</p></a></li>
+<li><a href="/cn/Products/Hydraulic/Hand-Pumps/2019/0722/32.html" title="铝合金手动泵"><img src="/uploads/allimg/190722/1-1ZH21K231-lp.jpg" alt="" /><p>铝合金手动泵</p></a></li>
+
+	</ul>
+	
+	</div>
+	
+	</div>
+
+	<script>
+	jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,scroll:1,vis:6});
+	</script>
+</div> 
+	<div class="cl"></div>
+</div>
+  
+<footer>
+	<ul>
+		<li>
+			<h2>关于我们</h2>
+			
+			<a href='/cn/about/Company/'>公司介绍</a>
+			
+			<a href='/cn/about/History/'>发展历程</a>
+			
+			<a href='/cn/about/Culture/'>企业文化</a>
+			
+			<a href='/cn/about/Directors_Message/'>董事长致辞</a>
+			 
+		</li>
+		<li>
+			<h2>产品中心</h2>
+			
+			<a href='/cn/Products/Bolting_tools/'>螺栓工具</a>
+			
+			<a href='/cn/Products/Cylinders/'>液压油缸</a>
+			
+			<a href='/cn/Products/Hydraulic/'>液压泵站</a>
+			
+			<a href='/cn/Products/Bearing/'>拔轮器</a>
+			
+			<a href='/cn/Products/Flange/'>法兰分离器</a>
+			
+			<a href='/cn/Products/Swaging/'>压套机</a>
+			
+			<a href='/cn/Products/Parts/'>配件</a>
+			 
+
+		</li>
+		
+		<li>
+			<h2>产品应用案例</h2>
+			
+			<a href='/cn/Projects/Bolting/'>螺栓工具</a>
+			
+			<a href='/cn/Projects/Hydraulic/'>液压油缸</a>
+			
+			<a href='/cn/Projects/Bearing/'>拔轮器</a>
+			
+			<a href='/cn/Projects/Flange/'>法兰工具</a>
+			
+			<a href='/cn/Projects/Pumps/'>液压泵站</a>
+			
+			<a href='/cn/Projects/Swaging/'>压套机</a>
+			 
+		</li>
+		<li>
+			<h2>技术及售后服务</h2>
+			
+			<a href='/cn/Service/Support/'>技术支持</a>
+			
+			<a href='/cn/Service/Download/'>资料下载</a>
+			 
+		</li> 
+		<li>
+			<h2>联系我们</h2>
+			<img src="/static/images/code.jpg" alt=""/><br />
+			<a class="tel"><img src="/static/images/tel.png" alt=""/>021-60674979</a> 
+
+		</li>
+		<div class="cl"></div>
+	</ul>
+	<div class="cl"></div>
+	<div class="corp">
+		Copyrigh © 2009-2020 上海泰杉机械有限公司. All right reserved
+	</div> 
+</footer>
+ 
+ 
+
+
+</div>
+
+<!--手机+ipad-->
+<div class="hidden-lg">
+<script type="text/javascript">
+$(window).on('load', function(){
+
+	function removePreloader() {
+		var preLoader = $('.preLoader');
+		preLoader.fadeOut();
+	}
+	setTimeout(removePreloader, 250);
+});
+	
+$(function(){
+$('.head_menu').click(function(){
+	$('.head_menuc_box').slideToggle();
+})
+})
+</script>
+
+<!-- Preloader -->
+<div class="preLoader">
+	<div class="preloder-inner">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+</div>
+<!-- End Of Preloader -->
+
+<div class="sidebar" id="dowebok">
+  <div class="sidebar-wrapper" id="sidebar-wrapper">
+    <ul class="nav">
+		<li><a href="/">网站首页</a></li>
+		<li><a href="/cn/about/">关于我们</a></li>
+		<li><a href="/cn/Products/">产品中心</a></li>
+		<li><a href="/cn/Projects/">应用案例 </a></li>
+		<li><a href="/cn/Service/">技术支持</a></li>
+		<li><a href="/cn/News/">新闻中心</a></li>
+		<li><a href="/cn/Contact/">联系我们</a></li>
+		<li><a href="/cn/job/">人才招聘</a></li>
+		<li><a href="/en/">ENGLISH</a></li>
+    </ul>
+  </div>
+</div>
+<header class="header clearfix">
+  <h1 class="bl"><a href="/cn/"><img src="/static/wap/images/logo.jpg" alt=""></a></h1>
+  <div id="menu" class="menu">
+    <!-- <img src="/static/wap/images/personal.png"  alt="" id="personal"> -->
+    <div class="ba"><img src="/static/wap/images/slide.png"  alt=""></div>
+  </div>
+</header>
+ 
+<div class="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="/static/wap/images/banner1.jpg"></div>
+		<div class="swiper-slide"><img src="/static/wap/images/banner2.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<div class="container">
+<div class="about">
+    <div id="heng"></div>
+    <h2>ABOUT US</h2>
+    <h3>关于我们</h2> 
+    <div class="detail"> <img src="/static/wap/images/about.jpg" /> 宁波英诗楚机械限公司由一批专业技术人员成立于2004在英国伦敦成立。成立之初，我们便把质量、技术作为我们的生命线。<br />2008年，我们把生产转移到塔山国际在中国的合资企业---宁波英诗楚有限公司。至此，我们成为以客户为导向、以技术驱动、注重质量的跨国企业。我们拥有自己的研发中心、营销中心....    </div>
+    <div class="more" style="text-align: center;">
+        <button onclick="window.location.href='/cn/about/'">MORE</button>
+    </div>
+</div>
+</div>
+<div class="black"></div>
+
+<div class="container">
+<div class="advantage">
+  <div class="ad_title">
+    <h1>CHOICE REASON</h1>
+    <h2>— 产品中心 —</h2>
+    <h3>以质量求生产 以科技求创新</h3>
+  </div>
+    <div id="slideBox" class="slideBox">
+      <div class="hd">
+        <ul><li>01</li><li>02</li><li>03</li><li>04</li><li>05</li><li>06</li></ul>
+      </div>
+      
+      <div id="xiahua"></div>
+      <div class="bd">
+        <ul> 
+		 <li><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html" target="_blank"><img src="/uploads/allimg/190723/1-1ZH3210459-lp.jpg" /></a>
+              <div class="advantage_content">
+                <div class="advantage_title">
+                  <h2><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html">钢丝绳压套机</a></h2>
+                  <!-- <h3></h3> -->
+                </div>              
+                <div class="advantage_detail">
+                  <p><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html">钢丝绳压套机 宁波英诗楚机械有限公司 钢丝绳压套机广泛应用于电缆或钢丝绳，使套圈的索具扣环的压制。我们拥有型号从</a></p>
+				</div>
+              </div>
+          </li>
+<li><a href="/cn/Products/Parts/Couplings/2019/0723/42.html" target="_blank"><img src="/uploads/allimg/190723/1-1ZH3211054-lp.png" /></a>
+              <div class="advantage_content">
+                <div class="advantage_title">
+                  <h2><a href="/cn/Products/Parts/Couplings/2019/0723/42.html">超高压快速接头</a></h2>
+                  <!-- <h3></h3> -->
+                </div>              
+                <div class="advantage_detail">
+                  <p><a href="/cn/Products/Parts/Couplings/2019/0723/42.html">超高压快速接头 产品特点：  流量大，螺纹连接锁紧，确保连接安全可靠  弹珠式锁紧，操作快捷  所有产品均标配防</a></p>
+				</div>
+              </div>
+          </li>
+<li><a href="/cn/Products/Cylinders/Double/2019/0722/23.html" target="_blank"><img src="/uploads/allimg/190722/1-1ZH21I319-lp.jpg" /></a>
+              <div class="advantage_content">
+                <div class="advantage_title">
+                  <h2><a href="/cn/Products/Cylinders/Double/2019/0722/23.html">双作用中空油缸</a></h2>
+                  <!-- <h3></h3> -->
+                </div>              
+                <div class="advantage_detail">
+                  <p><a href="/cn/Products/Cylinders/Double/2019/0722/23.html">上海泰杉机械有限公司 双作用中空油缸采用中空设计，可以作为顶升、拉升作用。可以配套液压拉马使用，用来安装、拆卸</a></p>
+				</div>
+              </div>
+          </li>
+<li><a href="/cn/Products/Cylinders/Double/2019/0722/22.html" target="_blank"><img src="/uploads/allimg/190722/1-1ZH21I045-lp.jpg" /></a>
+              <div class="advantage_content">
+                <div class="advantage_title">
+                  <h2><a href="/cn/Products/Cylinders/Double/2019/0722/22.html">双作用大吨位油缸</a></h2>
+                  <!-- <h3></h3> -->
+                </div>              
+                <div class="advantage_detail">
+                  <p><a href="/cn/Products/Cylinders/Double/2019/0722/22.html">宁波英诗楚机械有限公司 双作用大吨位千斤顶采用大吨位大行程设计。千斤顶吨位和行程可以根据工作环境定制，标准千斤</a></p>
+				</div>
+              </div>
+          </li>
+<li><a href="/cn/Products/Bolting_tools/torque_wrench/2019/0718/3.html" target="_blank"><img src="/uploads/190718/1-1ZGR2044G16.jpg" /></a>
+              <div class="advantage_content">
+                <div class="advantage_title">
+                  <h2><a href="/cn/Products/Bolting_tools/torque_wrench/2019/0718/3.html">铝钛合金驱动液压扭矩扳手</a></h2>
+                  <!-- <h3></h3> -->
+                </div>              
+                <div class="advantage_detail">
+                  <p><a href="/cn/Products/Bolting_tools/torque_wrench/2019/0718/3.html">上海泰杉机械有限公司 液压扭矩扳手是高强度的螺栓和螺母拧紧的解决方案。液压扭矩扳手是重型工业作业终极工具。泰杉</a></p>
+				</div>
+              </div>
+          </li>
+<li><a href="/cn/Products/Cylinders/Single/2019/0719/15.html" target="_blank"><img src="/uploads/allimg/190719/1-1ZG9213459-lp.jpg" /></a>
+              <div class="advantage_content">
+                <div class="advantage_title">
+                  <h2><a href="/cn/Products/Cylinders/Single/2019/0719/15.html">单作用薄型自锁油缸</a></h2>
+                  <!-- <h3></h3> -->
+                </div>              
+                <div class="advantage_detail">
+                  <p><a href="/cn/Products/Cylinders/Single/2019/0719/15.html">上海泰杉机械有限公司单作用薄型自锁千斤顶采用超薄设计，适合有限空间环境作业。单作用薄型螺自锁千斤顶高度可低至</a></p>
+				</div>
+              </div>
+          </li>
+ 
+  
+        </ul>
+      </div>
+    </div>
+</div>
+    <script type="text/javascript">
+    jQuery(".slideBox").slide({mainCell:".bd ul",trigger:"click",autoPlay:true});
+    </script>
+
+</div>
+
+<div class="container bt">
+    <div class="product">
+        <div class="product_title">
+            <h1>PRODUCT SERIES</h1>
+            <h2>— 产品系列 —</h2>
+        </div>
+        <div class="product_banner">
+            
+            <div class="swiper-container clearfix">
+              <div class="swiper-wrapper">
+				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Bolting_tools/"><div><img src="/static/wap/images/pl1.jpg"></div><h2>螺栓工具</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Cylinders/"><div><img src="/static/wap/images/pl2.jpg"></div><h2>液压油缸</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Hydraulic/"><div><img src="/static/wap/images/pl3.jpg"></div><h2>液压泵站</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Bearing/"><div><img src="/static/wap/images/pl4.jpg"></div><h2>拔轮器</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Flange/"><div><img src="/static/wap/images/pl5.jpg"></div><h2>法兰分离器</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Swaging/"><div><img src="/static/wap/images/pl6.jpg"></div><h2>压套机</h2></a></div></div>
+							
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="btn_left"><img src="/static/wap/images/left.png"/></div>
+              <div class="btn_right"><img src="/static/wap/images/right.png"/></div>
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+        <!-- <div class="more" style="position: relative;top:0.5rem;">
+            <button style="margin: 0.5rem 0;" onclick="window.location.href=''">MORE</button>
+        </div> -->
+    </div>
+</div>
+
+<div class="black"></div>
+
+<div class="container">
+    <div class="case">
+        <div class="case_title">
+            <h1>ENGINEERING CASE</h1>
+            <h2>—工程案例—</h2>
+        </div>
+        <div class="case_detail">
+		<a href="/cn/Projects/Bearing/2019/0724/96.html">
+            <img src="/uploads/190725/1-1ZH5213056441.jpg">
+            <h2>拔轮器产品应用案例</h2>
+		</a>	
+        </div>
+<div class="case_detail">
+		<a href="/cn/Projects/Flange/2019/0724/97.html">
+            <img src="/uploads/190725/1-1ZH521301c44.jpg">
+            <h2>法兰工具使用场景</h2>
+		</a>	
+        </div>
+<div class="case_detail">
+		<a href="/cn/Projects/Bearing/2019/0724/98.html">
+            <img src="/uploads/190725/1-1ZH5212953227.jpg">
+            <h2>液压螺栓拉伸器应用领域</h2>
+		</a>	
+        </div>
+<div class="case_detail">
+		<a href="/cn/Projects/Hydraulic/2019/0724/99.html">
+            <img src="/uploads/190725/1-1ZH5212930524.jpg">
+            <h2>用于建筑起重和支撑的液压</h2>
+		</a>	
+        </div>
+ 
+        <div class="more clearfix" style="text-align: center;">
+            <button onclick="window.location.href='/cn/Projects/'">MORE</button>
+        </div>
+    </div>
+</div>
+
+<div class="news bt">
+  <div class="container">
+      <div class="news_title">
+              <h1>NEWS CENTER</h1>
+              <h2>— 公司资讯 —</h2>
+      </div>
+      <div class="slideTxtBox">
+        
+      <div class="hd">
+        <ul>
+
+			<li>公司新闻</li>
+			<li>客户来访</li> 
+        </ul>
+      </div>
+      <div class="bd">
+        
+        <ul>
+			<li><span class="date">07-27</span><a href="/cn/News/Company/2019/0723/47.html">新加坡客户定制集装箱液压千斤顶</a></li>
+<li><span class="date">07-18</span><a href="/cn/News/Company/2019/0718/1.html">上海泰杉机械有限公司--专业的液压工具生产商</a></li>
+  
+		   
+        </ul>
+                       
+                   
+        <ul>
+			<li><span class="date">07-27</span><a href="/cn/News/Customer/2019/0723/46.html">马来西亚客户来访参观工厂</a></li>
+<li><span class="date">07-24</span><a href="/cn/News/Customer/2019/0723/45.html">巴西客户来访</a></li>
+<li><span class="date">07-24</span><a href="/cn/News/Customer/2019/0723/44.html">来自澳大利亚铁矿石开采业的一批客户来我厂参观</a></li>
+ 
+
+        </ul>
+                       
+      </div>
+    </div>
+    <script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+      
+      <div class="more" style="text-align: center;margin-top: 1rem;">
+            <button onclick="window.location.href='/cn/News/'">MORE</button>
+        </div>
+  </div>
+</div>
+<div class="footer">
+	<div class="footer_title">	
+    <div class="footer_title_left">
+        <a href="" target="_blank">一键导航</a>
+    </div>
+    <div class="footer_title_right">
+	<div class="bdsharebuttonbox">
+	<a href="" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<span class="tsina">新浪微博</span>
+	</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/statics/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>        
+    </div>
+	</div>
+    <div class="footer_menu clearfix">
+      <div class="container">
+        <div class="fooer_menu_head">
+            <ul>
+				<li><a href="/">网站首页</a></li>
+                <li><a href="/cn/about/">关于我们</a></li>
+                <li><a href="/cn/Products/">产品中心</a></li>
+                <li><a href="/cn/Projects/">应用案例 </a></li>
+                <li><a href="/cn/Service/">技术支持</a></li>
+                <li><a href="/cn/News/">新闻中心</a></li>
+                <li><a href="/cn/Contact/">联系我们</a></li>
+                <li><a href="/cn/job/">人才招聘</a></li>
+                
+            </ul>
+        </div>
+        <hr/>
+        <!-- <div class="qrcode clearfix">
+            <img src="/static/wap/images/qrcode.jpg">
+            <h2>关注微信公众号</h2>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div class="clear"></div> -->
+	<div class="copyright">
+		<h2>版权所有 &copy; 上海泰杉机械有限公司</h2> 
+	</div> 
+	
+	</div>
+ 
+
+<script type="text/javascript" src="/static/wap/js/index.js"></script>
+<script type="text/javascript">
+
+var banner = new Swiper ('.banner .swiper-container', {
+  loop: true,
+  autoplay : true,
+  pagination: {
+    el: '.banner .swiper-pagination',
+    clickable :true
+  },
+});
+var advantage_banner = new Swiper ('.advantage .swiper-container', {
+  loop: true,
+  autoplay : true,
+  pagination: {
+    el: '.advantage .swiper-pagination',
+    clickable :true,
+  },
+});
+var product_banner = new Swiper ('.product_banner .swiper-container', {
+  loop: true,
+  autoplay :false,
+  pagination: {
+    el: '.product_banner .swiper-pagination',
+    clickable :true,
+  },
+  navigation: {
+    nextEl: '.btn_right',
+    prevEl: '.btn_left',
+  },
+});
+</script>
+
+</div>
+
+</body>
+</html>

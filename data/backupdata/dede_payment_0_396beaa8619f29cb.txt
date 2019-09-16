@@ -1,0 +1,4 @@
+INSERT INTO `dede_payment` VALUES('','','','','','','','','','');
+INSERT INTO `dede_payment` VALUES('','','','','','','','','','');
+INSERT INTO `dede_payment` VALUES('','','','','','','','','','');
+INSERT INTO `dede_payment` VALUES('','','','','','','','','','');

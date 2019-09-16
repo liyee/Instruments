@@ -1,0 +1,57 @@
+<script type="text/javascript">
+$(window).on('load', function(){
+
+	function removePreloader() {
+		var preLoader = $('.preLoader');
+		preLoader.fadeOut();
+	}
+	setTimeout(removePreloader, 250);
+});
+	
+$(function(){
+$('.head_menu').click(function(){
+	$('.head_menuc_box').slideToggle();
+})
+})
+</script>
+
+<!-- Preloader -->
+<div class="preLoader">
+	<div class="preloder-inner">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+</div>
+<!-- End Of Preloader -->
+
+<div class="sidebar" id="dowebok">
+  <div class="sidebar-wrapper" id="sidebar-wrapper">
+    <ul class="nav">
+		<li><a href="/">网站首页</a></li>
+		<li><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">关于我们</a></li>
+		<li><a href="{dede:type typeid='11'}[field:typelink /]{/dede:type}">产品中心</a></li>
+		<li><a href="{dede:type typeid='52'}[field:typelink /]{/dede:type}">应用案例 </a></li>
+		<li><a href="{dede:type typeid='59'}[field:typelink /]{/dede:type}">技术支持</a></li>
+		<li><a href="{dede:type typeid='63'}[field:typelink /]{/dede:type}">新闻中心</a></li>
+		<li><a href="{dede:type typeid='66'}[field:typelink /]{/dede:type}">联系我们</a></li>
+		<li><a href="{dede:type typeid='69'}[field:typelink /]{/dede:type}">人才招聘</a></li>
+		<li><a href="/en/">ENGLISH</a></li>
+    </ul>
+  </div>
+</div>
+<header class="header clearfix">
+  <h1 class="bl"><a href="/cn/"><img src="{dede:global.cfg_cmspath/}/static/wap/images/logo.jpg" alt=""></a></h1>
+  <div id="menu" class="menu">
+    <!-- <img src="{dede:global.cfg_cmspath/}/static/wap/images/personal.png"  alt="" id="personal"> -->
+    <div class="ba"><img src="{dede:global.cfg_cmspath/}/static/wap/images/slide.png"  alt=""></div>
+  </div>
+</header>

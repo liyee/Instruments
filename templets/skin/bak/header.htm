@@ -1,0 +1,89 @@
+<header>
+	<ul>
+		<dl class="logo"><a href="/"><img src="{dede:global.cfg_cmspath/}/static/images/logo.jpg" /></a></dl>
+		<div class="version fl">
+		<a href="{dede:global.cfg_cmspath/}/cn/" rel="nofollow">中文版</a> | <a href="{dede:global.cfg_cmspath/}/en/" rel="nofollow">ENGLISH</a>	
+		</div>
+		<div class="search">
+			<form target="hid" onsubmit="site.get_list(1,$(&quot;#SearchValue&quot;).val())">
+				<input type="text" id="SearchValue" class="ser-text" placeholder="Search">
+				<button type="button" class="ser-sub" onclick="site.get_list(1,$(&quot;#SearchValue&quot;).val())"></button>
+			</form> 
+		</div>
+
+	</ul>
+</header>
+ 
+
+<div class="menu cl">
+
+	<ul id="nav" class="nav clearfix">
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='2'}[field:typelink /]{/dede:type}">关于我们</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='2' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='11'}[field:typelink /]{/dede:type}">产品中心</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='11' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='52'}[field:typelink /]{/dede:type}">产品应用案例</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='52' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>	
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='59'}[field:typelink /]{/dede:type}">技术及售后服务</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='59' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='63'}[field:typelink /]{/dede:type}">新闻中心</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='63' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='66'}[field:typelink /]{/dede:type}">联系我们</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='66' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>
+		<li class="nLi">
+			<h3><a href="{dede:type typeid='69'}[field:typelink /]{/dede:type}">人才招聘</a>|</h3>
+			<ul class="sub">
+				{dede:channel row='10' typeid='1' type='son' }
+				<li><a href="[field:typelink/]">[field:typename/]</a></li>
+				{/dede:channel} 
+			</ul>
+		</li>	
+		
+		
+	</ul>
+
+	<script>
+	jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	</script>
+	
+
+	
+</div>

@@ -1,0 +1,457 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<link rel="shortcut icon" href="favicon.ico" /> 
+<title>上海泰杉有限公司 - Tarzan Instruments International Co., Ltd.</title>
+<meta name="keywords" content="上海泰杉有限公司">
+<meta name="description" content="上海泰杉有限公司"> 
+<script src="https://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+<script src="/static/js/jquery.SuperSlide.2.1.1.js"></script>
+<link rel='stylesheet' type='text/css' href='/static/css/style.css'/>
+<script src="/static/js/jquery.SuperSlide.2.1.3.js"></script>
+</head>
+<body>
+<header>
+	<ul>
+		<dl class="logo"><img src="/static/images/logo.jpg" /></dl>
+		<div class="version fl">
+		<a href="javascript:void(0)" rel="nofollow">中文版</a> | <a href="javascript:void(0)" rel="nofollow">ENGLISH</a>	
+		</div>
+		<div class="search">
+			<form target="hid" onsubmit="site.get_list(1,$(&quot;#SearchValue&quot;).val())">
+				<input type="text" id="SearchValue" class="ser-text" placeholder="Search">
+				<button type="button" class="ser-sub" onclick="site.get_list(1,$(&quot;#SearchValue&quot;).val())"></button>
+			</form> 
+		</div>
+
+	</ul>
+</header>
+
+<div class="menu cl">
+	<ul>
+      
+      <li><a href='/cn/about/'>关于我们</a>|</li>
+      
+      <li><a href='/cn/Products/'>产品中心</a>|</li>
+      
+      <li><a href='/cn/Projects/'>产品应用案例</a>|</li>
+      
+      <li><a href='/cn/Service/'>技术及售后服务</a>|</li>
+      
+      <li><a href='/cn/News/'>新闻中心</a>|</li>
+      
+      <li><a href='/cn/Contact/'>联系我们</a>|</li>
+      
+	</ul>
+</div>
+
+
+<div class="c-banner" style="display:none">
+	<div class="banner">
+		<ul>
+			<li><a href=""><img src="/static/images/banner2.jpg"></a></li>
+			<li><a href=""><img src="/static/images/banner.jpg"></a></li>
+			<li><a href=""><img src="/static/images/banner2.jpg"></a></li>
+		</ul>
+	</div>
+	<!-- <div class="nexImg">
+		 
+	</div>
+	<div class="preImg">
+		 
+	</div> -->
+	<div class="jumpBtn">
+		<ul>
+			<li jumpImg="0"></li>
+			<li jumpImg="1"></li>
+			<li jumpImg="2"></li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+//定时器返回值
+var time=null;
+//记录当前位子
+var nexImg = 0;
+//用于获取轮播图图片个数
+var imgLength = $(".c-banner .banner ul li").length;
+//当时动态数据的时候使用,上面那个删除
+// var imgLength =0;
+//设置底部第一个按钮样式
+$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+
+//页面加载
+$(document).ready(function(){
+	// dynamicData();
+	//启动定时器,设置时间为3秒一次
+	time =setInterval(intervalImg,3000);
+});
+
+//点击上一张
+$(".preImg").click(function(){
+	//清楚定时器
+	clearInterval(time);
+	var nowImg = nexImg;
+	nexImg = nexImg-1;
+	console.log(nexImg);
+	if(nexImg<0){
+		nexImg=imgLength-1;
+	}
+	//底部按钮样式设置
+	$(".c-banner .jumpBtn ul li").css("background-color","white");
+	$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+	
+	//将当前图片试用绝对定位,下一张图片试用相对定位
+	$(".c-banner .banner ul img").eq(nowImg).css("position","absolute");
+	$(".c-banner .banner ul img").eq(nexImg).css("position","relative");
+	
+	//轮播淡入淡出
+	$(".c-banner .banner ul li").eq(nexImg).css("display","block");
+	$(".c-banner .banner ul li").eq(nexImg).stop().animate({"opacity":1},1000);
+	$(".c-banner .banner ul li").eq(nowImg).stop().animate({"opacity":0},1000,function(){
+		$(".c-banner ul li").eq(nowImg).css("display","none");
+	});
+	
+	//启动定时器,设置时间为3秒一次
+	time =setInterval(intervalImg,3000);
+})
+
+//点击下一张
+$(".nexImg").click(function(){
+	clearInterval(time);
+	intervalImg();
+	time =setInterval(intervalImg,3000);
+})
+
+//轮播图
+function intervalImg(){
+	if(nexImg<imgLength-1){
+		nexImg++;
+	}else{
+		nexImg=0;
+	}
+	
+	//将当前图片试用绝对定位,下一张图片试用相对定位
+	$(".c-banner .banner ul img").eq(nexImg-1).css("position","absolute");
+	$(".c-banner .banner ul img").eq(nexImg).css("position","relative");
+	
+	$(".c-banner .banner ul li").eq(nexImg).css("display","block");
+	$(".c-banner .banner ul li").eq(nexImg).stop().animate({"opacity":1},1000);
+	$(".c-banner .banner ul li").eq(nexImg-1).stop().animate({"opacity":0},1000,function(){
+		$(".c-banner .banner ul li").eq(nexImg-1).css("display","none");
+	});
+	$(".c-banner .jumpBtn ul li").css("background-color","white");
+	$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+}
+
+//轮播图底下按钮
+//动态数据加载的试用应放在请求成功后执行该代码,否则按钮无法使用
+$(".c-banner .jumpBtn ul li").each(function(){
+	//为每个按钮定义点击事件
+	$(this).click(function(){
+		clearInterval(time);
+		$(".c-banner .jumpBtn ul li").css("background-color","white");
+		jumpImg = $(this).attr("jumpImg");
+		if(jumpImg!=nexImg){
+			var after =$(".c-banner .banner ul li").eq(jumpImg);
+			var befor =$(".c-banner .banner ul li").eq(nexImg);
+			
+			//将当前图片试用绝对定位,下一张图片试用相对定位
+			$(".c-banner .banner ul img").eq(nexImg).css("position","absolute");
+			$(".c-banner .banner ul img").eq(jumpImg).css("position","relative");
+			
+			after.css("display","block");
+			after.stop().animate({"opacity":1},1000);
+			befor.stop().animate({"opacity":0},1000,function(){
+				befor.css("display","none");
+			});
+			nexImg=jumpImg;
+		}
+		$(this).css("background-color","black");
+		time =setInterval(intervalImg,3000);
+	});
+});
+
+ 
+</script>
+
+
+ 
+<!-- <div id="slideBox" class="slideBox">
+	<div class="hd">
+		<ul><li>1</li><li>2</li><li>3</li></ul>
+	</div>
+	<div class="bd">
+		<ul>
+			<li><a href="#" target="_blank"><img src="/static/images/banner2.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="/static/images/banner.jpg" /></a></li>
+			<li><a href="#" target="_blank"><img src="/static/images/banner2.jpg" /></a></li>			
+		</ul>
+	</div>
+ 
+</div>
+
+<script>
+jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:700});
+</script> -->
+<div class="warp">
+<div class="containter cl">
+	<div class="con_left">
+	
+		<div class="goods_item_left1 goods_list_left1">
+			<ul>
+				<h2>产品中心</h2>
+				 
+				
+				<li><a href='/cn/Products/Bolting_tools/'>螺栓工具<span>></span></a></li> 
+				
+				<li><a href='/cn/Products/Cylinders/'>液压油缸<span>></span></a></li> 
+				
+				<li><a href='/cn/Products/Hydraulic/'>液压泵站<span>></span></a></li> 
+				
+				<li><a href='/cn/Products/Bearing/'>拔轮器<span>></span></a></li> 
+				
+				<li><a href='/cn/Products/Flange/'>法兰分离器<span>></span></a></li> 
+				
+				<li><a href='/cn/Products/Swaging/'>压套机<span>></span></a></li> 
+				
+				<li><a href='/cn/Products/Parts/'>配件<span>></span></a></li> 
+				 
+			</ul>
+		</div>
+
+	
+	
+	
+	</div>
+	
+	<div class="con_right">
+	<div id="wzdh">
+		<ul>
+		<li><a href='http://www.li.com/'>首页</a> > <a href='/cn/'>中文</a> > <a href='/cn/Products/'>产品中心</a> > <a href='/cn/Products/Bolting_tools/'>螺栓工具</a> > <a href='/cn/Products/Bolting_tools/torque_wrench/'>液压扭矩扳手</a> > </li>
+		</ul>
+	</div>
+	
+		<div class="DetailContent">
+		<h2 class="title">铝钛合金中空液压扭矩扳手(3)</h2>
+		<div class="from">Source：Tarzan Instruments&nbsp;&nbsp;Time：2019-07-18</div>
+
+<style>
+#preview{ float:none; margin:20px auto; text-align:center; width:600px; background: #fff; padding: 20px;}
+.jqzoom{ width:600px; height:400px; position:relative;}
+.jqzoom img{ width:100%; height:100%;}
+.zoomdiv{height:400px; width:400px;}
+.list-h li{ float:left;}
+#spec-n5{width:600px; height:56px; padding-top:6px; margin: 10px 40px; overflow:hidden;}
+#spec-left{ background:url(images/left.gif) no-repeat; width:10px; height:45px; float:left; cursor:pointer; margin-top:5px;}
+#spec-right{background:url(images/right.gif) no-repeat; width:10px; height:45px; float:left;cursor:pointer; margin-top:5px;}
+#spec-list{ width:325px; float:left; overflow:hidden; margin-left:2px; display:inline;}
+#spec-list ul li{ float:left; margin-right:0px; display:inline; width:62px;}
+#spec-list ul li img{ padding:2px ; border:1px solid #ccc; width:50px; height:50px;}
+
+/*jqzoom*/
+.jqzoom{position:relative;padding:0;}
+.zoomdiv{z-index:100;position:absolute;top:1px;left:0px;width:400px;height:400px;background:url(i/loading.gif) #fff no-repeat center center;border:1px solid #e4e4e4;display:none;text-align:center;overflow: hidden;}
+.bigimg{width:800px;height:800px;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:50px;height:50px;border:1px solid #aaa;background:#FEDE4F 50% top no-repeat;opacity:0.5;-moz-opacity:0.5;-khtml-opacity:0.5;filter:alpha(Opacity=50);cursor:move;}
+#spec-list{ position:relative; width:500px; }
+#spec-list div{ width:100%; margin-top:0; *margin-left:0;}
+</style>
+
+<SCRIPT src="/static/js/jquery-1.2.6.pack.js" type=text/javascript></SCRIPT>
+<SCRIPT src="/static/js/base.js" type=text/javascript></SCRIPT>	
+		
+<div align="center">  
+<div id=preview>
+	<div class=jqzoom id=spec-n1 onClick="window.open('http://www.com/')"><IMG height=350
+	src="/uploads/190718/1-1ZGR20234Z6.jpg" jqimg="[field:imgsrc/]" width=350>
+	</div>
+	<div id=spec-n5>
+		<div class=control id=spec-left>
+			<img src="/static/images/left.gif" />
+		</div>
+		<div id=spec-list>
+			<ul class=list-h>
+				<li><img src="/uploads/allimg/190718/1-1ZGR20405.png"> </li>
+ 
+			</ul>
+		</div>
+		<div class=control id=spec-right>
+			<img src="/static/images/right.gif" />
+		</div>
+		
+    </div>
+</div>
+<SCRIPT type=text/javascript>
+	$(function(){			
+	   $(".jqzoom").jqueryzoom({
+			xzoom:400,
+			yzoom:400,
+			offset:10,
+			position:"right",
+			preload:1,
+			lens:1
+		});
+		$("#spec-list").jdMarquee({
+			deriction:"left",
+			width:495,
+			height:56,
+			step:2,
+			speed:4,
+			delay:10,
+			control:true,
+			_front:"#spec-right",
+			_back:"#spec-left"
+		});
+		$("#spec-list img").bind("mouseover",function(){
+			var src=$(this).attr("src");
+			$("#spec-n1 img").eq(0).attr({
+				src:src.replace("\/n5\/","\/n1\/"),
+				jqimg:src.replace("\/n5\/","\/n0\/")
+			});
+			$(this).css({
+				"border":"2px solid #ff6600",
+				"padding":"1px"
+			});
+		}).bind("mouseout",function(){
+			$(this).css({
+				"border":"1px solid #ccc",
+				"padding":"2px"
+			});
+		});				
+	})
+	</SCRIPT>
+
+<SCRIPT src="/static/js/lib.js" type=text/javascript></SCRIPT>
+<SCRIPT src="/static/js/zzsc.js" type=text/javascript></SCRIPT>  
+</div>
+		
+		
+ 
+<br />
+ 
+ 上海泰杉机械有限公司 液压扭矩扳手是高强度的螺栓和螺母拧紧的解决方案。液压扭矩扳手是重型工业作业终极工具。泰杉机械液压扭矩扳手提供的标准产品达70000牛米，可拆卸螺栓尺寸可达125毫米和六角对边达180毫米。我们为长江三峡大坝定制液压扭矩扳手高达160,000牛米。<br />
+<br />
+我们的扭矩扳手已被广泛应用于油田，炼油和石化行业，电力和水力电厂，水泥，建筑，造船和修理，矿山，冶金，机械和设备的测试和维修。<br />
+<br />
+我们的客户包括中国石油，中国石化、宝钢股份、江南造船厂、海螺水泥、中国冶金科工集团公司等。质量一直深受全球跨国公司的信赖。<br />
+<br />
+产品特点：<br />
+钢制中空式液压扭矩扳手适合高强度的使用及恶劣的工作环境，特别适合在油田、风电设备安装和调试使用；<br />
+中空液压扳手是由动力头与工作头组成，可一机多用，一个动力头可配备多种工作头使用，工作范围广；<br />
+可360&deg;&times;180&deg;旋转的油管接头，最接近无油管设计，避免油管扭曲破裂；<br />
+工作头可扩展的米制、英制六角驱动轴和套筒适用于空间狭小地方使用；<br />
+扭矩重复精度高达&plusmn;3%，配有活动手柄便于移动；<br />
+加油孔有利于扳手寿命，防止磨损，增强润滑；<br />
+基于安全的设计：内置卸压阀防止高压的压力损坏扳手；<br />
+可根据用户需求实现全自动连续拆卸与锁紧提高常规液压扳手锁紧效率的1/3；<br />
+金属工具箱包装，内含用户手册，安全手册，出厂证明;<br />
+产品通过ISO9001：2008和CE标准。
+		
+
+		</div>
+
+ 
+	
+	</div>
+
+	<div class="cl"></div>
+</div>
+
+ 
+	
+	<div class="cl"></div>
+</div>
+ 
+
+<footer>
+	<ul>
+		<li>
+			<h2>关于我们</h2>
+			
+			<a href='/cn/about/Company/'>公司介绍</a>
+			
+			<a href='/cn/about/History/'>发展历程</a>
+			
+			<a href='/cn/about/Certificates/'>公司资质</a>
+			
+			<a href='/cn/about/Culture/'>企业文化</a>
+			
+			<a href='/cn/about/Directors_Message/'>董事长致辞</a>
+			
+			<a href='/cn/about/Sales/'>营销网络</a>
+			
+			<a href='/cn/about/Service/'>经销商政策</a>
+			
+			<a href='/cn/about/Contact_US/'>联系我们</a>
+			 
+		</li>
+		<li>
+			<h2>产品中心</h2>
+			
+			<a href='/cn/Products/Bolting_tools/'>螺栓工具</a>
+			
+			<a href='/cn/Products/Cylinders/'>液压油缸</a>
+			
+			<a href='/cn/Products/Hydraulic/'>液压泵站</a>
+			
+			<a href='/cn/Products/Bearing/'>拔轮器</a>
+			
+			<a href='/cn/Products/Flange/'>法兰分离器</a>
+			
+			<a href='/cn/Products/Swaging/'>压套机</a>
+			
+			<a href='/cn/Products/Parts/'>配件</a>
+			 
+
+		</li>
+		
+		<li>
+			<h2>产品应用案例</h2>
+			
+			<a href='/cn/Projects/Bolting/'>螺栓工具</a>
+			
+			<a href='/cn/Projects/Hydraulic/'>液压油缸</a>
+			
+			<a href='/cn/Projects/Bearing/'>拔轮器</a>
+			
+			<a href='/cn/Projects/Flange/'>法兰工具</a>
+			
+			<a href='/cn/Projects/Pumps/'>液压泵站</a>
+			
+			<a href='/cn/Projects/Swaging/'>压套机</a>
+			 
+		</li>
+		<li>
+			<h2>技术及售后服务</h2>
+			
+			<a href='/cn/Service/Support/'>技术支持</a>
+			
+			<a href='/cn/Service/Download/'>资料下载</a>
+			
+			<a href='/cn/Service/shouhou/'>售后政策</a>
+			 
+		</li> 
+		<li>
+			<h2>联系我们</h2>
+			<img src="/static/images/code.jpg" alt=""/><br />
+			<a class="tel"><img src="/static/images/tel.png" alt=""/>021-60674979</a> 
+
+		</li>
+		<div class="cl"></div>
+	</ul>
+	<div class="cl"></div>
+	<div class="corp">
+		Copyrigh © 2009-2020 上海泰杉机械有限公司. All right reserved
+	</div> 
+</footer>
+ 
+
+ 
+</body>
+</html>

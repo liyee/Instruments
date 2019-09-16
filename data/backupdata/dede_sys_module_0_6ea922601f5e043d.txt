@@ -1,0 +1,6 @@
+INSERT INTO `dede_sys_module` VALUES('','','','','','','');
+INSERT INTO `dede_sys_module` VALUES('','','','','','','');
+INSERT INTO `dede_sys_module` VALUES('','','','','','','');
+INSERT INTO `dede_sys_module` VALUES('','','','','','','');
+INSERT INTO `dede_sys_module` VALUES('','','','','','','');
+INSERT INTO `dede_sys_module` VALUES('','','','','','','');

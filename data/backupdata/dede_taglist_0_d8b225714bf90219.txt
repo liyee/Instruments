@@ -1,0 +1,2 @@
+INSERT INTO `dede_taglist` VALUES('','','','','');
+INSERT INTO `dede_taglist` VALUES('','','','','');
