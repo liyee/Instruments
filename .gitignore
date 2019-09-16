@@ -11,3 +11,6 @@ en/*
 cn/*
 data/tplcache/*
 data/cache/*
+data/common.inc.php
+data/sessions_*/*
+index.html

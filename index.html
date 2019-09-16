@@ -1,14 +1,14 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0"> 
 <link rel="shortcut icon" href="favicon.ico" /> 
 <title>上海泰杉有限公司 - Tarzan Instruments International Co., Ltd.</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <script src="https://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
 <script src="/static/js/jquery.SuperSlide.2.1.1.js"></script>
-<!-- <link rel='stylesheet' type='text/css' href='/static/css/style.css'/> -->
-<script src="/static/js/jquery.SuperSlide.2.1.3.js"></script>
+<!-- <link rel='stylesheet' type='text/css' href='/static/css/en_style.css'/> --> 
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -48,9 +48,7 @@ function browserRedirect() {
 </script>
 
 </head>
-
 <body>
-  <!-- visible-lg hidden-sm -->
 <div class="visible-lg">
 
 
@@ -61,12 +59,9 @@ function browserRedirect() {
 		<a href="/cn/" rel="nofollow">中文版</a> | <a href="/en/" rel="nofollow">ENGLISH</a>	
 		</div>
 		<div class="search">
-			<form name="formsearch" action="/plus/search.php">
-				<input type="hidden" name="kwtype" value="0" />
-				<!-- <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
-			 -->
-				<input name="q" type="text" id="search-keyword" class="ser-text" placeholder="Search" value="">
-				<button type="submit" class="ser-sub"></button>
+			<form target="hid" onsubmit="site.get_list(1,$(&quot;#SearchValue&quot;).val())">
+				<input type="text" id="SearchValue" class="ser-text" placeholder="Search">
+				<button type="button" class="ser-sub" onclick="site.get_list(1,$(&quot;#SearchValue&quot;).val())"></button>
 			</form> 
 		</div>
 
@@ -78,99 +73,100 @@ function browserRedirect() {
 
 	<ul id="nav" class="nav clearfix">
 		<li class="nLi">
-			<h3><a href="/cn/about/">关于我们</a>|</h3>
+			<h3><a href="/en/About/">About Us</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/about/Company/">公司介绍</a></li>
+				<li><a href="/en/About/Company/">Company Profile</a></li>
 				
-				<li><a href="/cn/about/History/">发展历程</a></li>
+				<li><a href="/en/About/History/">History</a></li>
 				
-				<li><a href="/cn/about/Culture/">企业文化</a></li>
+				<li><a href="/en/About/Culture/">Coporate Culture</a></li>
 				
-				<li><a href="/cn/about/Directors_Message/">董事长致辞</a></li>
+				<li><a href="/en/About/Greetings/">Director’s Greetings</a></li>
 				 
 			</ul>
 		</li>
 
 		<li class="nLi">
-			<h3><a href="/cn/Products/">产品中心</a>|</h3>
+			<h3><a href="/en/Products/">Products</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/Products/Bolting_tools/">螺栓工具</a></li>
+				<li><a href="/en/Products/Bolting/">Bolting Tools</a></li>
 				
-				<li><a href="/cn/Products/Cylinders/">液压油缸</a></li>
+				<li><a href="/en/Products/HydraulicCy/">Hydraulic Cylinders</a></li>
 				
-				<li><a href="/cn/Products/Hydraulic/">液压泵站</a></li>
+				<li><a href="/en/Products/HydraulicP/">Hydraulic Pumps</a></li>
 				
-				<li><a href="/cn/Products/Bearing/">拔轮器</a></li>
+				<li><a href="/en/Products/BearingP/">Bearing Pullers</a></li>
 				
-				<li><a href="/cn/Products/Flange/">法兰分离器</a></li>
+				<li><a href="/en/Products/FlangeS/">Flange Spreaders</a></li>
 				
-				<li><a href="/cn/Products/Swaging/">压套机</a></li>
+				<li><a href="/en/Products/HydraulicSM/">Hydraulic Swaging Machine</a></li>
 				
-				<li><a href="/cn/Products/Parts/">配件</a></li>
+				<li><a href="/en/Products/PartsA/">Parts & Accessories</a></li>
 				 
 			</ul>
 		</li>
 
 		<li class="nLi">
-			<h3><a href="/cn/Projects/">产品应用案例</a>|</h3>
+			<h3><a href="/en/Applications/">Projects</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/Projects/Bolting/">螺栓工具</a></li>
+				<li><a href="/en/Applications/BoltingT/">Bolting Tools</a></li>
 				
-				<li><a href="/cn/Projects/Hydraulic/">液压油缸</a></li>
+				<li><a href="/en/Applications/HydraulicC/">Hydraulic Cylinders</a></li>
 				
-				<li><a href="/cn/Projects/Bearing/">拔轮器</a></li>
+				<li><a href="/en/Applications/BearingP/">Bearing Pullers</a></li>
 				
-				<li><a href="/cn/Projects/Flange/">法兰工具</a></li>
+				<li><a href="/en/Applications/FlangeT/">Flange Tools</a></li>
 				
-				<li><a href="/cn/Projects/Pumps/">液压泵站</a></li>
+				<li><a href="/en/Applications/HydralicP/">Hydralic Pumps</a></li>
 				
-				<li><a href="/cn/Projects/Swaging/">压套机</a></li>
+				<li><a href="/en/Applications/HydraulicSM/">Hydraulic Swaging Machine</a></li>
 				 
 			</ul>
 		</li>	
 		<li class="nLi">
-			<h3><a href="/cn/Service/">技术及售后服务</a>|</h3>
+			<h3><a href="/en/Support/">Support</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/Service/Support/">技术支持</a></li>
+				<li><a href="/en/Support/Technical/">Technical Support</a></li>
 				
-				<li><a href="/cn/Service/Download/">资料下载</a></li>
+				<li><a href="/en/Support/Download/">Files Download</a></li>
 				 
 			</ul>
 		</li>
 		<li class="nLi">
-			<h3><a href="/cn/News/">新闻中心</a>|</h3>
+			<h3><a href="/en/News/">News and Events</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/News/Company/">公司新闻</a></li>
+				<li><a href="/en/News/Company/">Company News</a></li>
 				
-				<li><a href="/cn/News/Customer/">客户来访</a></li>
+				<li><a href="/en/News/Customer/">Customer Visits</a></li>
 				 
 			</ul>
 		</li>
 		<li class="nLi">
-			<h3><a href="/cn/job/">人才招聘</a>|</h3>
+			<h3><a href="/en/JoinUs/">Recruitment</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/job/hr_policy/">人才政策</a></li>
+				<li><a href="/en/JoinUs/HR_Policy/">HR Policy</a></li>
 				
-				<li><a href="/cn/job/zhaopinxinxi/">招聘信息</a></li>
+				<li><a href="/en/JoinUs/Recruitment_position/">Recruitment position</a></li>
 				 
 			</ul>
 		</li>
 		<li class="nLi">
-			<h3><a href="/cn/Contact/">联系我们</a>|</h3>
+			<h3><a href="/en/Contact/">Contact us</a>|</h3>
 			<ul class="sub">
 				
-				<li><a href="/cn/Contact/Details/">联系方式</a></li>
+				<li><a href="/en/Contact/Details/">Contact Details</a></li>
 				
-				<li><a href="/cn/Contact/Maps/">地图</a></li>
+				<li><a href="/en/Contact/Maps/">Maps</a></li>
 				 
 			</ul>
-		</li>
+		</li>			 	
+		
 	</ul>
 
 	<script>
@@ -184,9 +180,9 @@ function browserRedirect() {
 <div class="c-banner">
 	<div class="banner">
 		<ul>
-			<li><a href="http://www.tarzaninstruments.com/cn/Projects/"><img style="width:100%; max-height:450px;" src="/static/images/banner2.jpg"></a></li>
-			<li><a href="http://www.tarzaninstruments.com/cn/News/Customer/"><img style="width:100%; max-height:450px;" src="/static/images/banner.jpg"></a></li>
-			<li><a href="http://www.tarzaninstruments.com/cn/Projects/Bolting/"><img style="width:100%; max-height:450px;" src="/static/images/banner2.jpg"></a></li>
+			<li><a href="http://www.tarzaninstruments.com/en/Applications/"><img style="width:100%; max-height:450px;" src="/static/images/banner2.jpg"></a></li>
+			<li><a href="http://www.tarzaninstruments.com/en/News/Customer/"><img style="width:100%; max-height:450px;" src="/static/images/banner.jpg"></a></li>
+			<li><a href="http://www.tarzaninstruments.com/en/Products/Bolting/"><img style="width:100%; max-height:450px;" src="/static/images/banner2.jpg"></a></li>
 		</ul>
 	</div>
 	<!-- <div class="nexImg">
@@ -203,7 +199,8 @@ function browserRedirect() {
 		</ul>
 	</div>
 </div>
- 
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript">
 //定时器返回值
 var time=null;
@@ -315,26 +312,25 @@ $(".c-banner .jumpBtn ul li").each(function(){
 <div class="warp">
 <div class="containter cl">
 	<div class="index_l fl">
-		<div class="title"><span class="head">新闻中心</span></div>
+		<div class="title"><span class="head">News and Events</span></div>
 		<dl>
-		<a href="/cn/News/Customer/2019/0723/44.html" title="来自澳大利亚铁矿石开采业的一批客户来我厂参观"><img src="/uploads/allimg/190723/1-1ZH321252R03-lp.jpg" alt="来自澳大利亚铁矿石开采业的一批客户来我厂参观" /></a>
-		<h2>来自澳大利亚铁矿石开采业的一批客户来我厂参观</h2>
-		<p>2016年7月27日，来自澳大利亚铁矿石开采业的一批客户来我厂参观，他们向宁波英诗楚机械有限公司询问并购买了一些液压扭矩扳手和千斤顶样品。此次工厂参观的目的是 检查我们的制造设施，...</p>
+		<a href="/en/News/Customer/2019/0724/95.html" title="MALAYSIA CUSTOMER VISIT"><img src="/uploads/190724/1-1ZH4221A4G2.jpg" alt="MALAYSIA CUSTOMER VISIT" /></a>
+		<h2>MALAYSIA CUSTOMER VISIT</h2>
+		<p>Mar.27th, a group of customers visited our factory. They had been our customer since 2015. Mr. Tan was the technical engineer, together with his two bosses they were here looking for more products procurement. The customers have been using our hydraul...</p>
 		</dl>
 
 		<ul>
-			<li><a href="/cn/News/Company/2019/0723/47.html" title="新加坡客户定制集装箱液压千斤顶">新加坡客户定制集装箱液压千斤顶</a></li>
-<li><a href="/cn/News/Customer/2019/0723/46.html" title="马来西亚客户来访参观工厂">马来西亚客户来访参观工厂</a></li>
-<li><a href="/cn/News/Customer/2019/0723/45.html" title="巴西客户来访">巴西客户来访</a></li>
-<li><a href="/cn/News/Customer/2019/0723/44.html" title="来自澳大利亚铁矿石开采业的一批客户来我厂参观">来自澳大利亚铁矿石开采业的一批客户来我厂参观</a></li>
-<li><a href="/cn/News/Company/2019/0718/1.html" title="上海泰杉机械有限公司--专业的液压工具生产商">上海泰杉机械有限公司--专业的液压工具生产商</a></li>
+			<li><a href="/en/News/Customer/2019/0724/95.html" title="MALAYSIA CUSTOMER VISIT">MALAYSIA CUSTOMER VISIT</a></li>
+<li><a href="/en/News/Customer/2019/0724/93.html" title="Australia Customer visit our factory">Australia Customer visit our factory</a></li>
+<li><a href="/en/News/Customer/2019/0724/94.html" title="BRAZIL CUSTOMER VISIT">BRAZIL CUSTOMER VISIT</a></li>
+<li><a href="/en/News/Company/2019/0724/92.html" title="Ningbo Instrument Mechanics Co., Ltd successfully completed the manufacturing hyd">Ningbo Instrument Mechanics Co., Ltd successfully completed the manufacturing hyd</a></li>
 
 		</ul> 
 	</div>
 	<div class="index_r fr">
-		<div class="title"><span class="head">合作共赢</span></div>
+		<div class="title"><span class="head">About Us</span></div>
 		<ul>
-			<a href="/cn/Projects/" title=""><img src="/static/images/hez.jpg" alt="" /></a>
+			<a href="/en/About/" title=""><img src="/static/images/hez.jpg" alt="" /></a>
 		</ul>
 	</div>
 	<div class="cl"></div>
@@ -343,18 +339,18 @@ $(".c-banner .jumpBtn ul li").each(function(){
 <div class="containter cl">
 	<div class="about_l fl">
 		<h2></h2>
-		<p>宁波英诗楚机械限公司由一批专业技术人员成立于2004在英国伦敦成立。成立之初，我们便把质量、技术作为我们的生命线。<br />
+		<p>Tarzan Instruments International Co., Ltd. was established in 2014 by a group of technicians specialized in hydraulic tools in London, UK. Ever since the establishment, we put quality, technology as our lifeline. <br />
  
-2008年，我们把生产转移到塔山国际在中国的合资企业---宁波英诗楚有限公司。至此，我们成为以客户为导向、以技术驱动、注重质量的跨国企业。我们拥有自己的研发中心、营销中心、成为销售及制造为一体的液压工具生产商。 </p>
+In 2017, we outsourced our manufacturing to Ningbo Instruments Mechanics Co., Ltd, a joint venture invested by TARZAN INSTRUMENTS INTERNATIONAL (UK). Since then, we have developed into a customers-oriented, technology-driven, quality-focused, multi-national, composed of R&D, marketing, distribution, and manufacturing.  </p>
 	</div>
 	<ul class="about_2">
-		<li><a href="/cn/about/Company/" title=""><img src="/static/images/a1.jpg" alt="" /></a></li>
-		<li><a href="/cn/Projects/" title=""><img src="/static/images/a2.jpg" alt="" /></a></li>
-		<li><a href="/cn/about/Culture/" title=""><img src="/static/images/a3.jpg" alt="" /></a></li>
+		<li><a href="/en/About/" title=""><img src="/static/images/a1.jpg" alt="" /></a></li>
+		<li><a href="/en/Applications/" title=""><img src="/static/images/a2.jpg" alt="" /></a></li>
+		<li><a href="/en/About/Certificates/" title=""><img src="/static/images/a3.jpg" alt="" /></a></li>
 	</ul>
 </div>
 <div class="containter cl probox">
-	<dl class="pro_t"><p><span>PRODUCTS</span> 产品中心</p><a href="/cn/Products/"><span class="more">More ></span></a></dl>
+	<dl class="pro_t"><p><span>PRODUCTS</span> 产品中心</p><a href="/en/Products/"><span class="more">More ></span></a></dl>
 	
 	<div class="picScroll-left">
 		<div class="hd">
@@ -366,18 +362,18 @@ $(".c-banner .jumpBtn ul li").each(function(){
 
 	<div class="bd">
 	<ul class="pro">
-		<li><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html" title="钢丝绳压套机"><img src="/uploads/allimg/190723/1-1ZH3210459-lp.jpg" alt="" /><p>钢丝绳压套机</p></a></li>
-<li><a href="/cn/Products/Parts/Hydraulic/2019/0723/43.html" title="油管"><img src="/uploads/allimg/190723/1-1ZH3211308-lp.jpg" alt="" /><p>油管</p></a></li>
-<li><a href="/cn/Products/Parts/Couplings/2019/0723/42.html" title="超高压快速接头"><img src="/uploads/allimg/190723/1-1ZH3211054-lp.png" alt="" /><p>超高压快速接头</p></a></li>
-<li><a href="/cn/Products/Bearing/Self-centering/2019/0723/40.html" title="一体式液压自对中拔轮器"><img src="/uploads/allimg/190723/1-1ZH3205123-lp.jpg" alt="" /><p>一体式液压自对中拔轮器</p></a></li>
-<li><a href="/cn/Products/Bearing/Mechanic/2019/0723/39.html" title="一体式套装拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204912-lp.jpg" alt="" /><p>一体式套装拔轮器</p></a></li>
-<li><a href="/cn/Products/Bearing/Mechanic/2019/0723/38.html" title="机械同步式拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204J3-lp.png" alt="" /><p>机械同步式拔轮器</p></a></li>
-<li><a href="/cn/Products/Bearing/Split/2019/0723/37.html" title="分体式液压自对中拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204610-lp.jpg" alt="" /><p>分体式液压自对中拔轮器</p></a></li>
-<li><a href="/cn/Products/Bearing/Multi-function/2019/0723/36.html" title="多功能组合式套装拔轮器"><img src="/uploads/allimg/190723/1-1ZH3204306-lp.jpg" alt="" /><p>多功能组合式套装拔轮器</p></a></li>
-<li><a href="/cn/Products/Bearing/Cart-loaded/2019/0723/35.html" title="车载液压拔轮器"><img src="/uploads/allimg/190723/1-1ZH3203U7.jpg" alt="" /><p>车载液压拔轮器</p></a></li>
-<li><a href="/cn/Products/Flange/Hydraulic/2019/0722/34.html" title="液压法兰分离器"><img src="/uploads/allimg/190722/1-1ZH21P414-lp.jpg" alt="" /><p>液压法兰分离器</p></a></li>
-<li><a href="/cn/Products/Flange/Mechanic/2019/0722/33.html" title="机械式法兰分离器"><img src="/uploads/allimg/190722/1-1ZH21K621-lp.jpg" alt="" /><p>机械式法兰分离器</p></a></li>
-<li><a href="/cn/Products/Hydraulic/Hand-Pumps/2019/0722/32.html" title="铝合金手动泵"><img src="/uploads/allimg/190722/1-1ZH21K231-lp.jpg" alt="" /><p>铝合金手动泵</p></a></li>
+		<li><a href="/en/Products/HydraulicCy/SychronousHJS/2019/0724/91.html" title="Synchronous PLC Hydraulic Lifting"><img src="/uploads/allimg/190724/1-1ZH4211937-lp.png" alt="" /><p>Synchronous PLC Hydraulic Lifting</p></a></li>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/90.html" title="Double Acting Hollow Plunger Hydr"><img src="/uploads/allimg/190724/1-1ZH4211544-lp.jpg" alt="" /><p>Double Acting Hollow Plunger Hydr</p></a></li>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/89.html" title="Double Acting Aluminum Hydraulic "><img src="/uploads/allimg/190724/1-1ZH4211239-lp.jpg" alt="" /><p>Double Acting Aluminum Hydraulic </p></a></li>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/88.html" title="Double Acting Pull Hydraulic Cyli"><img src="/uploads/allimg/190724/1-1ZH4211011-lp.jpg" alt="" /><p>Double Acting Pull Hydraulic Cyli</p></a></li>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/87.html" title="Double Acting High Tonnage Locknu"><img src="/uploads/allimg/190724/1-1ZH4210K4-lp.jpg" alt="" /><p>Double Acting High Tonnage Locknu</p></a></li>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/86.html" title="Double Acting High Tonnage Hydrau"><img src="/uploads/allimg/190724/1-1ZH4210445-lp.jpg" alt="" /><p>Double Acting High Tonnage Hydrau</p></a></li>
+<li><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/85.html" title="Mechanic Screw Cylinders"><img src="/uploads/allimg/190724/1-1ZH4210216-lp.jpg" alt="" /><p>Mechanic Screw Cylinders</p></a></li>
+<li><a href="/en/Products/HydraulicCy/Multi-stageHC/2019/0724/84.html" title="Multi-stage Hydraulic Cylinders"><img src="/uploads/allimg/190724/1-1ZH4210032-lp.jpg" alt="" /><p>Multi-stage Hydraulic Cylinders</p></a></li>
+<li><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/83.html" title="Single Acting High Tonnage Locknu"><img src="/uploads/allimg/190724/1-1ZH4205629-lp.jpg" alt="" /><p>Single Acting High Tonnage Locknu</p></a></li>
+<li><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/82.html" title=" Single Acting Hollow Plunger Cyl"><img src="/uploads/allimg/190724/1-1ZH4205337-lp.jpg" alt="" /><p> Single Acting Hollow Plunger Cyl</p></a></li>
+<li><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/81.html" title="Single Acting Hydraulic Cylinders"><img src="/uploads/allimg/190724/1-1ZH4205044-lp.jpg" alt="" /><p>Single Acting Hydraulic Cylinders</p></a></li>
+<li><a href="/en/Products/HydraulicCy/AluminumHC/2019/0724/80.html" title="Single Acting Aluminum Hydraulic "><img src="/uploads/allimg/190724/1-1ZH4204I6-lp.jpg" alt="" /><p>Single Acting Aluminum Hydraulic </p></a></li>
 
 	</ul>
 	
@@ -395,63 +391,63 @@ $(".c-banner .jumpBtn ul li").each(function(){
 <footer>
 	<ul>
 		<li>
-			<h2>关于我们</h2>
+			<h2>About Us</h2>
 			
-			<a href='/cn/about/Company/'>公司介绍</a>
+			<a href='/en/About/Company/'>Company Profile</a>
 			
-			<a href='/cn/about/History/'>发展历程</a>
+			<a href='/en/About/History/'>History</a>
 			
-			<a href='/cn/about/Culture/'>企业文化</a>
+			<a href='/en/About/Culture/'>Coporate Culture</a>
 			
-			<a href='/cn/about/Directors_Message/'>董事长致辞</a>
+			<a href='/en/About/Greetings/'>Director’s Greetings</a>
 			 
 		</li>
 		<li>
-			<h2>产品中心</h2>
+			<h2>Products</h2>
 			
-			<a href='/cn/Products/Bolting_tools/'>螺栓工具</a>
+			<a href='/en/Products/Bolting/'>Bolting Tools</a>
 			
-			<a href='/cn/Products/Cylinders/'>液压油缸</a>
+			<a href='/en/Products/HydraulicCy/'>Hydraulic Cylinders</a>
 			
-			<a href='/cn/Products/Hydraulic/'>液压泵站</a>
+			<a href='/en/Products/HydraulicP/'>Hydraulic Pumps</a>
 			
-			<a href='/cn/Products/Bearing/'>拔轮器</a>
+			<a href='/en/Products/BearingP/'>Bearing Pullers</a>
 			
-			<a href='/cn/Products/Flange/'>法兰分离器</a>
+			<a href='/en/Products/FlangeS/'>Flange Spreaders</a>
 			
-			<a href='/cn/Products/Swaging/'>压套机</a>
+			<a href='/en/Products/HydraulicSM/'>Hydraulic Swaging Machine</a>
 			
-			<a href='/cn/Products/Parts/'>配件</a>
+			<a href='/en/Products/PartsA/'>Parts & Accessories</a>
 			 
 
 		</li>
 		
 		<li>
-			<h2>产品应用案例</h2>
+			<h2>Projects</h2>
 			
-			<a href='/cn/Projects/Bolting/'>螺栓工具</a>
+			<a href='/en/Applications/BoltingT/'>Bolting Tools</a>
 			
-			<a href='/cn/Projects/Hydraulic/'>液压油缸</a>
+			<a href='/en/Applications/HydraulicC/'>Hydraulic Cylinders</a>
 			
-			<a href='/cn/Projects/Bearing/'>拔轮器</a>
+			<a href='/en/Applications/BearingP/'>Bearing Pullers</a>
 			
-			<a href='/cn/Projects/Flange/'>法兰工具</a>
+			<a href='/en/Applications/FlangeT/'>Flange Tools</a>
 			
-			<a href='/cn/Projects/Pumps/'>液压泵站</a>
+			<a href='/en/Applications/HydralicP/'>Hydralic Pumps</a>
 			
-			<a href='/cn/Projects/Swaging/'>压套机</a>
+			<a href='/en/Applications/HydraulicSM/'>Hydraulic Swaging Machine</a>
 			 
 		</li>
 		<li>
-			<h2>技术及售后服务</h2>
+			<h2>Support</h2>
 			
-			<a href='/cn/Service/Support/'>技术支持</a>
+			<a href='/en/Support/Technical/'>Technical Support</a>
 			
-			<a href='/cn/Service/Download/'>资料下载</a>
+			<a href='/en/Support/Download/'>Files Download</a>
 			 
 		</li> 
 		<li>
-			<h2>联系我们</h2>
+			<h2>Contact us</h2>
 			<img src="/static/images/code.jpg" alt=""/><br />
 			<a class="tel"><img src="/static/images/tel.png" alt=""/>021-60674979</a> 
 
@@ -460,18 +456,20 @@ $(".c-banner .jumpBtn ul li").each(function(){
 	</ul>
 	<div class="cl"></div>
 	<div class="corp">
-		Copyrigh © 2009-2020 上海泰杉机械有限公司. All right reserved
+		Copyrigh © 2009-2020 TARZAN INSTURMENTS INTERNATINAL CO., LTD. All right reserved
 	</div> 
 </footer>
  
  
 
-
 </div>
+
 
 <!--手机+ipad-->
 <div class="hidden-lg">
+
 <script type="text/javascript">
+
 $(window).on('load', function(){
 
 	function removePreloader() {
@@ -505,30 +503,30 @@ $('.head_menu').click(function(){
 	</div>
 </div>
 <!-- End Of Preloader -->
-
 <div class="sidebar" id="dowebok">
   <div class="sidebar-wrapper" id="sidebar-wrapper">
     <ul class="nav">
-		<li><a href="/">网站首页</a></li>
-		<li><a href="/cn/about/">关于我们</a></li>
-		<li><a href="/cn/Products/">产品中心</a></li>
-		<li><a href="/cn/Projects/">应用案例 </a></li>
-		<li><a href="/cn/Service/">技术支持</a></li>
-		<li><a href="/cn/News/">新闻中心</a></li>
-		<li><a href="/cn/Contact/">联系我们</a></li>
-		<li><a href="/cn/job/">人才招聘</a></li>
-		<li><a href="/en/">ENGLISH</a></li>
+		<li><a href="/en/">Home</a></li>
+		<li><a href="/en/About/">ABOUT</a></li>
+		<li><a href="/en/Products/">PRODUCTS</a></li>
+		<li><a href="/en/Applications/">APPLICATIONS</a></li>
+		<li><a href="/en/Support/">SUPPORT</a></li>
+		<li><a href="/en/News/">NEWS</a></li>
+		<li><a href="/en/Contact/">CONTACT</a></li>
+		<li><a href="/en/JoinUs/">JOB</a></li>
+		<li><a href="/cn/">中文版</a></li>
     </ul>
   </div>
 </div>
+
 <header class="header clearfix">
-  <h1 class="bl"><a href="/cn/"><img src="/static/wap/images/logo.jpg" alt=""></a></h1>
+  <h1 class="bl"><a href="/en/"><img src="/static/wap/images/logo.jpg" alt=""></a></h1>
   <div id="menu" class="menu">
     <!-- <img src="/static/wap/images/personal.png"  alt="" id="personal"> -->
     <div class="ba"><img src="/static/wap/images/slide.png"  alt=""></div>
   </div>
-</header>
- 
+</header> 
+
 <div class="banner">
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -542,8 +540,8 @@ $('.head_menu').click(function(){
 <div class="about">
     <div id="heng"></div>
     <h2>ABOUT US</h2>
-    <h3>关于我们</h2> 
-    <div class="detail"> <img src="/static/wap/images/about.jpg" /> 宁波英诗楚机械限公司由一批专业技术人员成立于2004在英国伦敦成立。成立之初，我们便把质量、技术作为我们的生命线。<br />2008年，我们把生产转移到塔山国际在中国的合资企业---宁波英诗楚有限公司。至此，我们成为以客户为导向、以技术驱动、注重质量的跨国企业。我们拥有自己的研发中心、营销中心....    </div>
+    <!-- <h3>关于我们</h2> -->
+    <div class="detail"> <img src="/static/wap/images/about.jpg" /> Ningbo Instruments Mechanics’s products have been successfully served many industries, for instance, oil and petroleum, refinery and chemical factories, steel and cements plants-....    </div>
     <div class="more" style="text-align: center;">
         <button onclick="window.location.href='/cn/about/'">MORE</button>
     </div>
@@ -555,8 +553,8 @@ $('.head_menu').click(function(){
 <div class="advantage">
   <div class="ad_title">
     <h1>CHOICE REASON</h1>
-    <h2>— 产品中心 —</h2>
-    <h3>以质量求生产 以科技求创新</h3>
+    <h2>— RECOMMENDED PRODUCTS —</h2>
+    <!-- <h3>以质量求生产 以科技求创新</h3> -->
   </div>
     <div id="slideBox" class="slideBox">
       <div class="hd">
@@ -566,69 +564,69 @@ $('.head_menu').click(function(){
       <div id="xiahua"></div>
       <div class="bd">
         <ul> 
-		 <li><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html" target="_blank"><img src="/uploads/allimg/190723/1-1ZH3210459-lp.jpg" /></a>
+		 <li><a href="/en/Products/HydraulicCy/SychronousHJS/2019/0724/91.html" target="_blank"><img src="/uploads/allimg/190724/1-1ZH4211937-lp.png" /></a>
               <div class="advantage_content">
                 <div class="advantage_title">
-                  <h2><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html">钢丝绳压套机</a></h2>
+                  <h2><a href="/en/Products/HydraulicCy/SychronousHJS/2019/0724/91.html">Synchronous PLC Hydraulic Lifting</a></h2>
                   <!-- <h3></h3> -->
                 </div>              
                 <div class="advantage_detail">
-                  <p><a href="/cn/Products/Swaging/Hydraulic/2019/0723/41.html">钢丝绳压套机 宁波英诗楚机械有限公司 钢丝绳压套机广泛应用于电缆或钢丝绳，使套圈的索具扣环的压制。我们拥有型号从</a></p>
+                  <p><a href="/en/Products/HydraulicCy/SychronousHJS/2019/0724/91.html">Synchronous PLC Hydraulic Lifting System Model number Lift points Integrated pump Accuracy (mm) Touch screen control Leveling Weighing CG Expandable TII-SLCG 4, </a></p>
 				</div>
               </div>
           </li>
-<li><a href="/cn/Products/Parts/Couplings/2019/0723/42.html" target="_blank"><img src="/uploads/allimg/190723/1-1ZH3211054-lp.png" /></a>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/90.html" target="_blank"><img src="/uploads/allimg/190724/1-1ZH4211544-lp.jpg" /></a>
               <div class="advantage_content">
                 <div class="advantage_title">
-                  <h2><a href="/cn/Products/Parts/Couplings/2019/0723/42.html">超高压快速接头</a></h2>
+                  <h2><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/90.html">Double Acting Hollow Plunger Hydr</a></h2>
                   <!-- <h3></h3> -->
                 </div>              
                 <div class="advantage_detail">
-                  <p><a href="/cn/Products/Parts/Couplings/2019/0723/42.html">超高压快速接头 产品特点：  流量大，螺纹连接锁紧，确保连接安全可靠  弹珠式锁紧，操作快捷  所有产品均标配防</a></p>
+                  <p><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/90.html">Double Acting Hollow Plunger Hydraulic Cylinders NINGBO INSTRUMENTS MECHANICS CO., LTD Double Acting Hollow Hydraulic Cylinders are designed with hollow central </a></p>
 				</div>
               </div>
           </li>
-<li><a href="/cn/Products/Cylinders/Double/2019/0722/23.html" target="_blank"><img src="/uploads/allimg/190722/1-1ZH21I319-lp.jpg" /></a>
+<li><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/86.html" target="_blank"><img src="/uploads/allimg/190724/1-1ZH4210445-lp.jpg" /></a>
               <div class="advantage_content">
                 <div class="advantage_title">
-                  <h2><a href="/cn/Products/Cylinders/Double/2019/0722/23.html">双作用中空油缸</a></h2>
+                  <h2><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/86.html">Double Acting High Tonnage Hydrau</a></h2>
                   <!-- <h3></h3> -->
                 </div>              
                 <div class="advantage_detail">
-                  <p><a href="/cn/Products/Cylinders/Double/2019/0722/23.html">上海泰杉机械有限公司 双作用中空油缸采用中空设计，可以作为顶升、拉升作用。可以配套液压拉马使用，用来安装、拆卸</a></p>
+                  <p><a href="/en/Products/HydraulicCy/DoubleAHC/2019/0724/86.html">Double Acting High Tonnage Hydraulic Cylinders NINGBO INSTRUMENTS MECHANICS CO., LTD Double Acting High Tonnage Hydraulic Cylinders are designed with high capaci</a></p>
 				</div>
               </div>
           </li>
-<li><a href="/cn/Products/Cylinders/Double/2019/0722/22.html" target="_blank"><img src="/uploads/allimg/190722/1-1ZH21I045-lp.jpg" /></a>
+<li><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/83.html" target="_blank"><img src="/uploads/allimg/190724/1-1ZH4205629-lp.jpg" /></a>
               <div class="advantage_content">
                 <div class="advantage_title">
-                  <h2><a href="/cn/Products/Cylinders/Double/2019/0722/22.html">双作用大吨位油缸</a></h2>
+                  <h2><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/83.html">Single Acting High Tonnage Locknu</a></h2>
                   <!-- <h3></h3> -->
                 </div>              
                 <div class="advantage_detail">
-                  <p><a href="/cn/Products/Cylinders/Double/2019/0722/22.html">宁波英诗楚机械有限公司 双作用大吨位千斤顶采用大吨位大行程设计。千斤顶吨位和行程可以根据工作环境定制，标准千斤</a></p>
+                  <p><a href="/en/Products/HydraulicCy/SingleAHC/2019/0724/83.html">Single Acting High Tonnage Locknut Hydraulic Cylinders NINGBO INSTRUMENTS MECHANICS CO., LTD Single Acting High Tonnage Locknut Hydraulic Cylinders are designed </a></p>
 				</div>
               </div>
           </li>
-<li><a href="/cn/Products/Bolting_tools/torque_wrench/2019/0718/3.html" target="_blank"><img src="/uploads/190718/1-1ZGR2044G16.jpg" /></a>
+<li><a href="/en/Products/HydraulicP/ElectricHP/2019/0724/64.html" target="_blank"><img src="/uploads/allimg/190724/1-1ZH4193R5-lp.jpg" /></a>
               <div class="advantage_content">
                 <div class="advantage_title">
-                  <h2><a href="/cn/Products/Bolting_tools/torque_wrench/2019/0718/3.html">铝钛合金驱动液压扭矩扳手</a></h2>
+                  <h2><a href="/en/Products/HydraulicP/ElectricHP/2019/0724/64.html">Electric Hydraulic Wrench Pump</a></h2>
                   <!-- <h3></h3> -->
                 </div>              
                 <div class="advantage_detail">
-                  <p><a href="/cn/Products/Bolting_tools/torque_wrench/2019/0718/3.html">上海泰杉机械有限公司 液压扭矩扳手是高强度的螺栓和螺母拧紧的解决方案。液压扭矩扳手是重型工业作业终极工具。泰杉</a></p>
+                  <p><a href="/en/Products/HydraulicP/ElectricHP/2019/0724/64.html">Electric Hydraulic Wrench Pump Ningbo Instruments Mechanics Co., Ltd. electric hydraulic pump TTI-EP series is specially designed to provide hydraulic power for </a></p>
 				</div>
               </div>
           </li>
-<li><a href="/cn/Products/Cylinders/Single/2019/0719/15.html" target="_blank"><img src="/uploads/allimg/190719/1-1ZG9213459-lp.jpg" /></a>
+<li><a href="/en/Products/HydraulicP/ElectricHP/2019/0724/63.html" target="_blank"><img src="/uploads/allimg/190724/1-1ZH4193452-lp.jpg" /></a>
               <div class="advantage_content">
                 <div class="advantage_title">
-                  <h2><a href="/cn/Products/Cylinders/Single/2019/0719/15.html">单作用薄型自锁油缸</a></h2>
+                  <h2><a href="/en/Products/HydraulicP/ElectricHP/2019/0724/63.html">High pressure electric hydraulic </a></h2>
                   <!-- <h3></h3> -->
                 </div>              
                 <div class="advantage_detail">
-                  <p><a href="/cn/Products/Cylinders/Single/2019/0719/15.html">上海泰杉机械有限公司单作用薄型自锁千斤顶采用超薄设计，适合有限空间环境作业。单作用薄型螺自锁千斤顶高度可低至</a></p>
+                  <p><a href="/en/Products/HydraulicP/ElectricHP/2019/0724/63.html">● Aluminum-titanium alloy fuel tank, small size and light weight, suitable for carrying on the job site ● High and low voltage automatic switching function, </a></p>
 				</div>
               </div>
           </li>
@@ -648,18 +646,18 @@ $('.head_menu').click(function(){
     <div class="product">
         <div class="product_title">
             <h1>PRODUCT SERIES</h1>
-            <h2>— 产品系列 —</h2>
+            <!-- <h2>— 产品系列 —</h2> -->
         </div>
         <div class="product_banner">
             
             <div class="swiper-container clearfix">
               <div class="swiper-wrapper">
-				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Bolting_tools/"><div><img src="/static/wap/images/pl1.jpg"></div><h2>螺栓工具</h2></a></div></div>
-				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Cylinders/"><div><img src="/static/wap/images/pl2.jpg"></div><h2>液压油缸</h2></a></div></div>
-				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Hydraulic/"><div><img src="/static/wap/images/pl3.jpg"></div><h2>液压泵站</h2></a></div></div>
-				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Bearing/"><div><img src="/static/wap/images/pl4.jpg"></div><h2>拔轮器</h2></a></div></div>
-				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Flange/"><div><img src="/static/wap/images/pl5.jpg"></div><h2>法兰分离器</h2></a></div></div>
-				<div class="swiper-slide"><div class="img_box"><a href="/cn/Products/Swaging/"><div><img src="/static/wap/images/pl6.jpg"></div><h2>压套机</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/en/Products/Bolting/"><div><img src="/static/wap/images/pl1.jpg"></div><h2>Bolting Tools</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/en/Products/HydraulicCy/"><div><img src="/static/wap/images/pl2.jpg"></div><h2>Hydraulic Cylinders</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/en/Products/HydraulicP/"><div><img src="/static/wap/images/pl3.jpg"></div><h2>Hydraulic Pumps</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/en/Products/BearingP/"><div><img src="/static/wap/images/pl4.jpg"></div><h2>Bearing Pullers</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/en/Products/FlangeS/"><div><img src="/static/wap/images/pl5.jpg"></div><h2>Flange Spreaders</h2></a></div></div>
+				<div class="swiper-slide"><div class="img_box"><a href="/en/Products/HydraulicSM/"><div><img src="/static/wap/images/pl6.jpg"></div><h2>Hydraulic Swaging Machine</h2></a></div></div>
 							
               </div>
               <div class="swiper-pagination"></div>
@@ -680,31 +678,31 @@ $('.head_menu').click(function(){
 <div class="container">
     <div class="case">
         <div class="case_title">
-            <h1>ENGINEERING CASE</h1>
-            <h2>—工程案例—</h2>
+            <h1>Applications and Projects</h1>
+            <!-- <h2>—工程案例—</h2> -->
         </div>
         <div class="case_detail">
-		<a href="/cn/Projects/Bearing/2019/0724/96.html">
-            <img src="/uploads/190725/1-1ZH5213056441.jpg">
-            <h2>拔轮器产品应用案例</h2>
+		<a href="/en/Applications/HydraulicSM/2019/0726/109.html">
+            <img src="/uploads/allimg/190726/1-1ZH6213R60-L.jpg">
+            <h2>Hydraulic wire rope press machine</h2>
 		</a>	
         </div>
 <div class="case_detail">
-		<a href="/cn/Projects/Flange/2019/0724/97.html">
-            <img src="/uploads/190725/1-1ZH521301c44.jpg">
-            <h2>法兰工具使用场景</h2>
+		<a href="/en/Applications/HydralicP/2019/0726/108.html">
+            <img src="/uploads/allimg/190726/1-1ZH62135210-L.jpg">
+            <h2>Hydraulic pump application scenar</h2>
 		</a>	
         </div>
 <div class="case_detail">
-		<a href="/cn/Projects/Bearing/2019/0724/98.html">
-            <img src="/uploads/190725/1-1ZH5212953227.jpg">
-            <h2>液压螺栓拉伸器应用领域</h2>
+		<a href="/en/Applications/FlangeT/2019/0726/107.html">
+            <img src="/uploads/allimg/190726/1-1ZH62133090-L.jpg">
+            <h2>Flange tools use scenario</h2>
 		</a>	
         </div>
 <div class="case_detail">
-		<a href="/cn/Projects/Hydraulic/2019/0724/99.html">
-            <img src="/uploads/190725/1-1ZH5212930524.jpg">
-            <h2>用于建筑起重和支撑的液压</h2>
+		<a href="/en/Applications/HydraulicC/2019/0726/106.html">
+            <img src="/uploads/allimg/190726/1-1ZH62130200-L.jpg">
+            <h2>Bearing Puller Use Case</h2>
 		</a>	
         </div>
  
@@ -717,32 +715,31 @@ $('.head_menu').click(function(){
 <div class="news bt">
   <div class="container">
       <div class="news_title">
-              <h1>NEWS CENTER</h1>
-              <h2>— 公司资讯 —</h2>
+              <h1>News and Events</h1>
+              <!-- <h2>— 新闻中心 —</h2> -->
       </div>
       <div class="slideTxtBox">
         
       <div class="hd">
         <ul>
 
-			<li>公司新闻</li>
-			<li>客户来访</li> 
+			<li>Company News</li>
+			<li>Customer Visits</li> 
         </ul>
       </div>
       <div class="bd">
         
         <ul>
-			<li><span class="date">07-27</span><a href="/cn/News/Company/2019/0723/47.html">新加坡客户定制集装箱液压千斤顶</a></li>
-<li><span class="date">07-18</span><a href="/cn/News/Company/2019/0718/1.html">上海泰杉机械有限公司--专业的液压工具生产商</a></li>
+			<li><span class="date">07-24</span><a href="/en/News/Company/2019/0724/92.html">Ningbo Instrument Mechanics Co., Ltd successfully completed the</a></li>
   
 		   
         </ul>
                        
                    
         <ul>
-			<li><span class="date">07-27</span><a href="/cn/News/Customer/2019/0723/46.html">马来西亚客户来访参观工厂</a></li>
-<li><span class="date">07-24</span><a href="/cn/News/Customer/2019/0723/45.html">巴西客户来访</a></li>
-<li><span class="date">07-24</span><a href="/cn/News/Customer/2019/0723/44.html">来自澳大利亚铁矿石开采业的一批客户来我厂参观</a></li>
+			<li><span class="date">07-24</span><a href="/en/News/Customer/2019/0724/95.html">MALAYSIA CUSTOMER VISIT</a></li>
+<li><span class="date">07-24</span><a href="/en/News/Customer/2019/0724/93.html">Australia Customer visit our factory</a></li>
+<li><span class="date">07-24</span><a href="/en/News/Customer/2019/0724/94.html">BRAZIL CUSTOMER VISIT</a></li>
  
 
         </ul>
@@ -756,15 +753,19 @@ $('.head_menu').click(function(){
         </div>
   </div>
 </div>
+
 <div class="footer">
 	<div class="footer_title">	
     <div class="footer_title_left">
-        <a href="" target="_blank">一键导航</a>
+        <!-- <a href="" target="_blank">一键导航</a> -->
+        <a href="" target="_blank">Site Map</a>
     </div>
     <div class="footer_title_right">
 	<div class="bdsharebuttonbox">
-	<a href="" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<span class="tsina">新浪微博</span>
+	<!-- <a href="" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a> -->
+	<a href="" class="bds_tsina" data-cmd="tsina" title="Share Sina Weibo"></a>
+	<!-- <span class="tsina">新浪微博</span> -->
+	<span class="tsina">Sina Weibo</span>
 	</div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/statics/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>        
     </div>
@@ -773,14 +774,14 @@ $('.head_menu').click(function(){
       <div class="container">
         <div class="fooer_menu_head">
             <ul>
-				<li><a href="/">网站首页</a></li>
-                <li><a href="/cn/about/">关于我们</a></li>
-                <li><a href="/cn/Products/">产品中心</a></li>
-                <li><a href="/cn/Projects/">应用案例 </a></li>
-                <li><a href="/cn/Service/">技术支持</a></li>
-                <li><a href="/cn/News/">新闻中心</a></li>
-                <li><a href="/cn/Contact/">联系我们</a></li>
-                <li><a href="/cn/job/">人才招聘</a></li>
+				<li><a href="/EN/">HOME</a></li>
+                <li><a href="/en/About/">ABOUT</a></li>
+                <li><a href="/en/Products/">PRODUCTS</a></li>
+                <li><a href="/en/Applications/">APPLICATIONS </a></li>
+                <li><a href="/en/Support/">SUPPORT</a></li>
+                <li><a href="/en/News/">NEWS</a></li>
+                <li><a href="/en/Contact/">CONTACT</a></li>
+                <li><a href="/en/JoinUs/">JOB</a></li>
                 
             </ul>
         </div>
@@ -793,11 +794,10 @@ $('.head_menu').click(function(){
     </div>
     <!-- <div class="clear"></div> -->
 	<div class="copyright">
-		<h2>版权所有 &copy; 上海泰杉机械有限公司</h2> 
+		<h2> &copy; Tarzan Instruments International Co., Ltd.  All rights reserved.</h2> 
 	</div> 
 	
 	</div>
- 
 
 <script type="text/javascript" src="/static/wap/js/index.js"></script>
 <script type="text/javascript">
@@ -833,6 +833,8 @@ var product_banner = new Swiper ('.product_banner .swiper-container', {
 </script>
 
 </div>
+
+
 
 </body>
 </html>
