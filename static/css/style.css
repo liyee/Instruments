@@ -804,7 +804,7 @@ div.goods_item_list:nth-child(n+5) {
 .DetailContent { min-height:460px;  margin: 0 auto; padding:25px 15px; line-height: 24px; color: #333;  }
 .DetailContent p{padding:5px; line-height:25px;}
 .DetailContent .title{ text-align:center; font-size:24px; line-height:40px;}
-.from{text-align:center; font-size:14px; line-height:30px; margin:0 20px 20px; padding-bottom:10px;  border-bottom:#ccc 1px dotted}
+.from{text-align:center; font-size:14px; line-height:30px; margin:15px 20px 20px; padding-bottom:10px;  border-bottom:#ccc 1px dotted}
 .DetailContent strong{font-weight:bold}
 .DetailContent table{width:98%!important;} 
 .aui-store-address{ 
